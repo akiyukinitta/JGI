@@ -5,11 +5,11 @@
 }
 
 
-.hp_spNone {
+.hp_pcOnly {
 	display: none !important;
 }
 
-.hp_pcNone {
+.hp_spOnly {
 	display: block !important;
 }
 
@@ -89,7 +89,7 @@
 .hp_w100{
 	width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 	.hp_spNone {
 		display: block !important;
 	}
@@ -97,29 +97,4 @@
 	.hp_pcNone {
 		display: none !important;
 	}
-
-	.hp_pl1em{
-		padding-left: 1em;
-	}
-	.hp_pr2em{
-		padding-right: 2em;
-	}
-	.hp_pl2em{
-		padding-left: 2em;
-	}
 }
-
-
-.hp_en{
-	font-family: 'Lora', serif;
-}
-.hp_ja{
-	font-family: 'Shippori Mincho', serif;
-}
-
-@include mq(lg) { 
-	.hp_lgblock{
-
-		display: block;
-	}
-  }
