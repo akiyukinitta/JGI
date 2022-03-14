@@ -1,0 +1,32 @@
+@import "settings";
+
+.modaal-container {
+  background: #19191980 !important;
+  width: 30% !important;
+}
+.modaal-content-container {
+  text-align: center;
+}
+.modaal-content-container img {
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .modaal-content-container img {
+      width: 100%;
+  }
+  .modaal-container {
+      width: 100% !important;
+  }
+}
+.modaal-content-container{
+padding: 0 !important;
+}
+
+.modal-open {
+  overflow: auto;
+  padding: 0 !important;
+  }
+
+  .modaal-close:focus:after, .modaal-close:focus:before, .modaal-close:hover:after, .modaal-close:hover:before {
+    background: #333;
+}

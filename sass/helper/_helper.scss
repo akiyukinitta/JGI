@@ -1,0 +1,125 @@
+@import "settings";
+
+.hp_textCenter {
+	text-align: center;
+}
+
+
+.hp_spNone {
+	display: none !important;
+}
+
+.hp_pcNone {
+	display: block !important;
+}
+
+.hp_rowReverse {
+	flex-direction: row-reverse;
+}
+
+.hp_textRight {
+	text-align: right;
+}
+
+.hp_textLeft {
+	text-align: left;
+}
+.hp_noWrap{
+	white-space: nowrap;
+}
+.hp_noLRPadding{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.hp_noShow{
+	display: none!important;
+}
+
+.hp_pt2em{
+	padding-top: 2em;
+}
+.hp_mt2em{
+	margin-top: 2em;
+}
+.hp_mb1em{
+	margin-bottom: 1em;
+}
+.hp_mb4em{
+	margin-bottom: 4em;
+}
+
+.hp_mb6em{
+	margin-bottom: 6em;
+}
+
+.hp_smallTitle{
+	font-size: 0.5em;
+}
+
+
+.hp_mdblock{
+@media screen and (max-width: 767px) {
+	display: block !important;
+}}
+.hp_spTextCenter {
+	text-align: center;
+}
+
+.hp_mt0{
+	padding-right: 1em;
+}
+
+.hp_pr1em{
+	padding-right: 1em;
+}
+.hp_pb1em{
+	padding-bottom: 1em;
+}
+.hp_flex1{
+	flex: 1;
+}
+.hp_flex2{
+	flex: 2z;
+}
+.hp_flex3{
+	flex: 3;
+}
+
+.hp_w100{
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.hp_spNone {
+		display: block !important;
+	}
+
+	.hp_pcNone {
+		display: none !important;
+	}
+
+	.hp_pl1em{
+		padding-left: 1em;
+	}
+	.hp_pr2em{
+		padding-right: 2em;
+	}
+	.hp_pl2em{
+		padding-left: 2em;
+	}
+}
+
+
+.hp_en{
+	font-family: 'Lora', serif;
+}
+.hp_ja{
+	font-family: 'Shippori Mincho', serif;
+}
+
+@include mq(lg) { 
+	.hp_lgblock{
+
+		display: block;
+	}
+  }

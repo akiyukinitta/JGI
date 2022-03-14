@@ -1,0 +1,22 @@
+@import "settings";
+
+
+.bl_link {
+	text-decoration: none;
+	padding-bottom: 3px; /* 文字と下線に隙間を作る */
+	color: #333;
+	display: block;
+}
+.bl_link:after {
+	content: '';
+	//width: 0;
+	transition: all 0.8s ease;
+	border-bottom: 1px solid #333;
+	display: block;
+    opacity: 0;
+}
+.bl_link:hover:after {
+	width: 100%;
+	border-bottom: 1px solid #333;
+    opacity: 1;
+}

@@ -1,0 +1,67 @@
+// ベース色
+
+// テキスト
+$cr-txt: #131313;
+$fz-base: 1.6rem;
+
+// 白色
+$cr-white: #fafafa;
+//黒色
+$cr-black: #3c3c3c;
+
+// 青色
+$cr-blue: #0247B9;
+
+// テーブル
+$cr-table: #eee;
+
+
+$sec-interval: 4em;
+
+
+// レイアウト幅
+$layout-width-inner: 1082px;
+$layout-width-vw: 1082;
+
+// ブレークポイント
+$breakpoints: (
+	"xs": "(max-width: 320px)",
+	"sm": "(max-width: 575px)",
+	"md": "(max-width: 767px)",
+	"lg": "(max-width: 991px)",
+	"xl": "(max-width: 1199px)",
+	"xll": "(max-width: 1399px)"
+);
+
+@mixin mq($breakpoint: md) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+	  @content;
+	}
+  }
+  /*使い方*/
+  /*呼び出したいところで、()内に上の値指定、（mdを書き換える）
+  @include mq(md) { 
+	color: yellow;
+  }
+  */
+
+// z-index の指定
+$layer: (
+	modal: 100,
+	drawer: 40,
+	floating: 30,
+	header: 20,
+	footer: 10,
+	default: 1
+);
+
+// em割り算
+@function func-em($numerator, $denominator) {
+
+	@return $numerator / $denominator * 1em;
+}
+
+@function func-divison($numerator, $denominator) {
+
+	@return $numerator / $denominator;
+}
