@@ -19,9 +19,9 @@ body {
 
 body {
     font-family: 'Shippori Mincho', serif;
-	font-size: 1.3rem;
+	font-size: $fz-base;
 	font-weight: 500;
-	color: $cr-black;
+	color: $cr-txt;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -61,17 +61,7 @@ button:focus {
 	outline:0;
 }
 
-// a:hover{
-// 	opacity: 0.8;
-// }
 
-.info_cat__list li a.current{
-	color: $cr-blue;
-}
-
-.page-numbers .current{
-	color: #131313;
-}
 
 @media screen and (min-width: 768px) {
 	body {
