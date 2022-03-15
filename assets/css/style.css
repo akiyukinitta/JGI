@@ -192,7 +192,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #F9F9F9;
 	color: #000;
-	font-family: 'Shippori Mincho', serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.8rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -566,6 +566,14 @@ progress {
   }
   */
 
+.el_btn.el_btn__contact {
+	background-color: #00387C;
+	color: #fff;
+	font-size: 2.1rem;
+	font-weight: 700;
+	padding: 1em 1.35em 1em 4em;
+}
+
 /*使い方*/
 
 /*呼び出したいところで、()内に上の値指定、（mdを書き換える）
@@ -595,13 +603,8 @@ progress {
   */
 
 .ly_footer {
-	background-color: #222;
-	padding-bottom: 20px;
+	border-top: 1px solid #D0D0D0;
 	padding-top: 20px;
-}
-
-.hp_btGray {
-	border-top: 1px solid #777 !important;
 }
 
 .ly_footer_inner {
@@ -613,18 +616,18 @@ progress {
 }
 
 .bl_footerNav {
-	-ms-flex-pack: distribute;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	margin-bottom: 48px;
 }
 
 .bl_footerNav_item {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	text-align: center;
+	padding-right: 3.45em;
+}
+
+.bl_footerNav01 .bl_footerNav_item:first-of-type {
+	padding-right: 5.7em;
 }
 
 .bl_footerNav_item > *:last-child {
@@ -636,11 +639,10 @@ progress {
 }
 
 .bl_footerNav_link {
-	color: #fff;
 	display: block;
+	font-size: 2rem;
+	font-weight: bold;
 	margin-bottom: 10px;
-	padding-bottom: 15px;
-	padding-top: 15px;
 	position: relative;
 	text-decoration: none;
 }
@@ -648,19 +650,6 @@ progress {
 .bl_footerNav_link:focus,
 .bl_footerNav_link:hover {
 	text-decoration: underline;
-}
-
-.bl_footerNav_link::after {
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	background-color: currentColor;
-	content: '';
-	height: 15px;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 1px;
 }
 
 .bl_footerChildNav { /* css-wipeではスタイリングなし */
@@ -671,8 +660,7 @@ progress {
 }
 
 .bl_footerChildNav_link {
-	color: #ddd;
-	font-size: 15px;
+	font-size: 1.5rem;
 	text-decoration: none;
 }
 
@@ -681,11 +669,50 @@ progress {
 	text-decoration: underline;
 }
 
+.ly_copyright {
+	background-color: #00387C;
+}
+
 .el_footerCopyright {
 	color: #ddd;
 	display: block;
-	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 1.91667em 0 1.66667em;
 	text-align: center;
+}
+
+.ly_footerBottom {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 46px;
+}
+
+.bl_footerBottomNav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.bl_footerBottomNav_link {
+	padding: 1em;
+	position: relative;
+}
+
+.bl_footerBottomNav_link::after {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	background-color: #000;
+	content: '';
+	height: 1em;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
 }
 
 /*使い方*/
@@ -720,21 +747,40 @@ progress {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	padding-left: 2em;
+}
+
+.bl_headerUtilsRight {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.bl_headerUtilsRight_centence {
+	color: #00387C;
+	font-size: 20px;
+	padding-right: 1.2em;
+}
+
+.bl_headerUtilsLeft {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .bl_headerUtils_logo {
-	width: 150px;
-}
-
-.bl_headerUtils .el_btn {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	padding: 10px 20px;
-	width: auto;
+	padding-right: 24px;
 }
 
 .bl_headerNav {
 	-ms-flex-pack: distribute;
+	background-color: #E2F9FF;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -757,28 +803,24 @@ progress {
 	border-bottom: 4px solid transparent;
 	color: #222;
 	display: block;
-	padding: 15px 5px;
+	font-size: 2.2rem;
+	padding: 24px 5px;
 	position: relative;
 	text-decoration: none;
 	transition: .25s;
 }
 
-.bl_headerNav_link:focus,
-.bl_headerNav_link:hover {
-	border-bottom-color: #e25c00;
-}
-
 .bl_headerNav_link::after {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	background-color: #ddd;
+	background-color: #000;
 	content: '';
-	height: 20px;
+	height: 54px;
 	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 1px;
+	width: 3px;
 }
 
 /*使い方*/
@@ -901,6 +943,26 @@ progress {
 
 .hp_w100 {
 	width: 100% !important;
+}
+
+.hp_mailIcon {
+	position: relative;
+}
+
+.hp_mailIcon::before {
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-image: url(/images/common/mail_icon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 1.5em;
+	position: absolute;
+	position: absolute;
+	right: 100%;
+	top: 64%;
+	transform: translate(-50%, -50%);
+	width: 1.5em;
 }
 
 /*使い方*/

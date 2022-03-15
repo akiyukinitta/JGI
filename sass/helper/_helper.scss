@@ -86,3 +86,19 @@
 .hp_w100{
 	width: 100% !important;
 }
+.hp_mailIcon{
+	position: relative;
+}
+.hp_mailIcon::before{
+	position: absolute;
+	content: "";
+	background-image: url(/images/common/mail_icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 64%;
+	right: 100%;
+	transform: translate(-50%, -50%);
+	width: 1.5em;
+	height: 1.5em;
+}
