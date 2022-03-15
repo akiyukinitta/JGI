@@ -8,14 +8,14 @@ $fz-base: 1.8rem;
 
 // レイアウト幅
 $layout-width-inner: 1000px;
-$layout-width-vw: 1082;
+$layout-width-vw: 1000;
 
 // ブレークポイント
 $breakpoints: (
 	"xs": "(max-width: 320px)",
 	"sm": "(max-width: 575px)",
 	"md": "(max-width: 767px)",
-	"lg": "(max-width: 991px)",
+	"lg": "(max-width: 1000px)",
 	"xl": "(max-width: 1199px)",
 	"xll": "(max-width: 1399px)"
 );

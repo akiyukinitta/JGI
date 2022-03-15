@@ -1,28 +1,34 @@
 @import "settings";
 
 .hp_textCenter {
-	text-align: center;
+	text-align: center !important;
 }
 
 
 .hp_pcOnly {
-	display: none !important;
+	display: block !important;
+	@include mq(md) { 
+		display: none !important;
+    }
 }
 
 .hp_spOnly {
-	display: block !important;
+	display: none !important;
+	@include mq(md) { 
+		display: block !important;
+    }
 }
 
 .hp_rowReverse {
-	flex-direction: row-reverse;
+	flex-direction: row-reverse !important;
 }
 
 .hp_textRight {
-	text-align: right;
+	text-align: right !important;
 }
 
 .hp_textLeft {
-	text-align: left;
+	text-align: left !important;
 }
 .hp_noWrap{
 	white-space: nowrap;
@@ -37,64 +43,46 @@
 }
 
 .hp_pt2em{
-	padding-top: 2em;
+	padding-top: 2em !important;
 }
 .hp_mt2em{
-	margin-top: 2em;
+	margin-top: 2em !important;
 }
 .hp_mb1em{
-	margin-bottom: 1em;
+	margin-bottom: 1em !important;
 }
 .hp_mb4em{
-	margin-bottom: 4em;
+	margin-bottom: 4em !important;
 }
 
 .hp_mb6em{
-	margin-bottom: 6em;
+	margin-bottom: 6em !important;
 }
 
 .hp_smallTitle{
-	font-size: 0.5em;
-}
-
-
-.hp_mdblock{
-@media screen and (max-width: 767px) {
-	display: block !important;
-}}
-.hp_spTextCenter {
-	text-align: center;
+	font-size: 0.5em !important;
 }
 
 .hp_mt0{
-	padding-right: 1em;
+	padding-right: 1em !important;
 }
 
 .hp_pr1em{
-	padding-right: 1em;
+	padding-right: 1em !important;
 }
 .hp_pb1em{
-	padding-bottom: 1em;
+	padding-bottom: 1em !important;
 }
 .hp_flex1{
 	flex: 1;
 }
 .hp_flex2{
-	flex: 2z;
+	flex: 2;
 }
 .hp_flex3{
 	flex: 3;
 }
 
 .hp_w100{
-	width: 100%;
-}
-@media screen and (max-width: 768px) {
-	.hp_spNone {
-		display: block !important;
-	}
-
-	.hp_pcNone {
-		display: none !important;
-	}
+	width: 100% !important;
 }
