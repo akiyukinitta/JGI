@@ -699,7 +699,7 @@ progress {
 
 .ly_footer {
 	border-top: 1px solid #D0D0D0;
-	padding-top: 20px;
+	padding-top: 56px;
 }
 
 .ly_footer_inner {
@@ -841,7 +841,6 @@ progress {
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	padding-left: 2em;
 }
 
@@ -1177,6 +1176,14 @@ progress {
   }
   */
 
+.ly_topMV {
+	margin-bottom: 53px;
+}
+
+.ly_topMV img {
+	width: 100%;
+}
+
 .ly_topTopics_head {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1194,13 +1201,13 @@ progress {
 	padding-bottom: 30px;
 }
 
-.un_topBusinessWrapper {
-	text-align: center;
-}
-
-.un_topBusinessWrapper .un_topBusinessBtn {
+.ly_topBusiness .un_topBusinessBtn {
 	font-size: 1.7rem;
 	width: 310px;
+}
+
+.un_topBusinessBtnWrapper {
+	text-align: center;
 }
 
 /*使い方*/

@@ -1,5 +1,10 @@
 @import "settings";
-
+.ly_topMV{
+    margin-bottom: 53px;
+    img{
+        width: 100%;
+    }
+}
 .ly_topTopics_head{
     display: flex;
     align-items: center;
@@ -9,11 +14,12 @@
 .el_topCenetence{
 padding-bottom: 30px;
 }
-
-.un_topBusinessWrapper{
-    text-align: center;
+.ly_topBusiness {
     .un_topBusinessBtn{
         width: 310px;
         font-size: 1.7rem;
     }
+}
+.un_topBusinessBtnWrapper{
+    text-align: center;
 }
