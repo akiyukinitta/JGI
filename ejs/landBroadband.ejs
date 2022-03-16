@@ -1,15 +1,36 @@
 <% const pageMeta={ title: '陸上ブロードバンド地震探査サービス' , description: '陸上ブロードバンド地震探査サービスの説明文です' } %>
     <%- include("common/_header", { meta: pageMeta }) %>
         <!-- content -->
-        <div id="content">
-            <div class="inner">
-
-                <div class="ly_MV">
-                    <div class="ly_MV_inner">
-                        <h1 class="el_lv1Heading el_lv1Heading__black">陸上ブロードバンド<br>地震探査サービス</h1>
-                    </div>
+        <main>
+            <div class="ly_MV">
+                <div class="ly_MV_inner">
+                    <h1 class="el_lv1Heading el_lv1Heading__black">陸上ブロードバンド<br>地震探査サービス</h1>
                 </div>
+            </div>
 
-            </div><!-- /inner -->
+            <section class="ly_landBroadband">
+                <div class="ly_inner">
+                    <div class="un_landBroadband_head">
+                        <h2 class="un_landBroadband_head_ttl">ブロードバンド震源を用いた地下構造マルチスケール探査</h2>
+                        <p class="un_landBroadband_head_txt">
+                            当社では、これまでに、バイブレータ震源を広帯域で発震するための波形生成・発震制御技術開発、低周波受振器の導入、FWI技術開発を進めてきました。2020年に最新型ブロードバンド・バイブレータ震源(米国INOVA社UNIVIB2)を4台導入し本格的な広帯域地震探査サービス(Broadband
+                            Seismic)を開始しました。広帯域地震探査サービスにより、地下極浅部から深部までの地下構造の可視化が可能になります。
+                        </p>
+                    </div>
+                    <ul class="un_landBroadband_list">
+                        <li class="un_landBroadband_item">
+                            <h3 class="un_landBroadband_item_ttl">Broadband Vibratorの有効周波数帯域</h3>
+                            <img src="/images/landBroadband/landBroadband_item_img_01.jpg" alt="" class="un_landBroadband_item_img">
+                        </li>
+                        <li class="un_landBroadband_item">
+                            <h3 class="un_landBroadband_item_ttl">Broadband Vibrator(データ取得風景)</h3>
+                            <img src="/images/landBroadband/landBroadband_item_img_01.jpg" alt="" class="un_landBroadband_item_img">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
         </div><!-- /content -->
         <%- include("common/_footer") %>
