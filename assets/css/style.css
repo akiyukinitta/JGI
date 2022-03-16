@@ -243,7 +243,7 @@ li {
 
 .ly_inner {
 	margin: 0 auto;
-	max-width: 100px;
+	max-width: 1000px;
 }
 
 /*!
@@ -566,12 +566,56 @@ progress {
   }
   */
 
+.el_btn {
+	background-color: #00387C;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 1em 1.35em 1em 4em;
+}
+
 .el_btn.el_btn__contact {
 	background-color: #00387C;
 	color: #fff;
 	font-size: 2.1rem;
 	font-weight: 700;
 	padding: 1em 1.35em 1em 4em;
+}
+
+/*使い方*/
+
+/*呼び出したいところで、()内に上の値指定、（mdを書き換える）
+  @include mq(md) { 
+	color: yellow;
+  }
+  */
+
+.bl_bussinesLink_list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-left: -20px;
+}
+
+.bl_bussinesLink_item {
+	padding-left: 20px;
+	width: 300px;
+}
+
+.bl_bussinesLink_item.bl_bussinesLink_item__large {
+	width: 420px;
+}
+
+.bl_bussinesLink_item_inner {
+	background-color: #00387C;
+	padding-top: 10px;
+}
+
+.bl_bussinesLink_ttl {
+	color: #fff;
+	font-size: 2.2rem;
+	text-align: center;
 }
 
 /*使い方*/
@@ -589,10 +633,6 @@ progress {
 	color: yellow;
   }
   */
-
-/*---------------------------------
-  commonTitle
----------------------------------*/
 
 /*使い方*/
 
@@ -831,6 +871,17 @@ progress {
   }
   */
 
+.el_topLv2Heading {
+	color: #00387C;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.el_topLv2Heading.el_topLv2Heading__hasBorder {
+	border-bottom: 14px solid #00387C;
+	padding-bottom: 4px;
+}
+
 /*使い方*/
 
 /*呼び出したいところで、()内に上の値指定、（mdを書き換える）
@@ -838,6 +889,74 @@ progress {
 	color: yellow;
   }
   */
+
+/*使い方*/
+
+/*呼び出したいところで、()内に上の値指定、（mdを書き換える）
+  @include mq(md) { 
+	color: yellow;
+  }
+  */
+
+/*使い方*/
+
+/*呼び出したいところで、()内に上の値指定、（mdを書き換える）
+  @include mq(md) { 
+	color: yellow;
+  }
+  */
+
+.bl_topics { /* css-wipeではスタイリングなし */
+}
+
+.bl_topics_item {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 1px solid #707070;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.bl_topics_item:first-child {
+	border-top: 1px solid #707070;
+}
+
+.bl_topics_header {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.bl_topics_itemTag {
+	background-color: #2F8B87;
+	border-radius: 12px;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.6rem;
+	margin-right: 10px;
+	padding: 0.5em 1em;
+}
+
+.bl_topics_date {
+	font-size: 1.6rem;
+	margin-right: 1em;
+}
+
+.bl_topics_ttl {
+	text-decoration: none;
+}
+
+.bl_topics_ttl:focus,
+.bl_topics_ttl:hover {
+	text-decoration: underline;
+}
 
 /*使い方*/
 
@@ -965,6 +1084,26 @@ progress {
 	width: 1.5em;
 }
 
+.hp_arrowIcon {
+	position: relative;
+}
+
+.hp_arrowIcon::before {
+	-webkit-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	background-image: url(/images/common/arrow.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 1.5em;
+	position: absolute;
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	transform: translate(0%, -50%);
+	width: 1.5em;
+}
+
 /*使い方*/
 
 /*呼び出したいところで、()内に上の値指定、（mdを書き換える）
@@ -972,6 +1111,19 @@ progress {
 	color: yellow;
   }
   */
+
+.ly_topTopics_head {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 16px;
+}
 
 /*使い方*/
 

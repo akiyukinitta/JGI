@@ -1,0 +1,46 @@
+@import "settings";
+
+
+.bl_topics {
+    /* css-wipeではスタイリングなし */
+  }
+  
+  .bl_topics_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bl_topics_item:first-child {
+    border-top: 1px solid #707070;
+  }
+  
+  .bl_topics_header {
+    display: flex;
+    align-items: center;
+  }
+  .bl_topics_itemTag{
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 12px;
+    background-color: #2F8B87;
+    padding: 0.5em 1em;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .bl_topics_date {
+    font-size: 1.6rem;
+    margin-right: 1em;
+  }
+  
+  .bl_topics_ttl {
+    text-decoration: none;
+  }
+  
+  .bl_topics_ttl:focus,
+  .bl_topics_ttl:hover {
+    text-decoration: underline;
+  }
+  

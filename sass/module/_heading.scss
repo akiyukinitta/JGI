@@ -1,0 +1,11 @@
+@import "settings";
+
+.el_topLv2Heading{
+        color: $cr-main;
+        font-weight: bold;
+        margin-bottom: 16px;
+}
+.el_topLv2Heading.el_topLv2Heading__hasBorder{
+border-bottom: 14px solid #00387C;
+padding-bottom: 4px;
+}
