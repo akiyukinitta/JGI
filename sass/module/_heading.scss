@@ -1,4 +1,17 @@
 @import "settings";
+.el_lv1Heading {
+background-color:  #00387C99;
+color:  #fff;
+font-size:  3.2rem;
+text-align:  center;
+font-weight: bold;
+letter-spacing: 0.2em;
+padding: 42px 0;
+line-height: 1.5;
+}
+.el_lv1Heading__black {
+background-color:  #2B2B2B99;
+}
 
 .el_topLv2Heading{
         color: $cr-main;
