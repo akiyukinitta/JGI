@@ -1,1 +1,23 @@
 @import "settings";
+.bl_card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bl_card.bl_card__3col{
+    .bl_card_item{
+width: 33%;
+    }
+}
+.bl_card_item{
+    margin-bottom: 25px;
+    }
+.bl_card_lv3Heading{
+    text-align: center;
+    color: $cr-main;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    line-height: func-em(26,18);
+    padding-top: 0.75em;
+    margin-bottom: 0;
+}

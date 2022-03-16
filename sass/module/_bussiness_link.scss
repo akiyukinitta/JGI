@@ -6,20 +6,29 @@
 .bl_bussinesLink_item{
     padding-left: 20px;
     width: 300px;
-
 }
 .bl_bussinesLink_item.bl_bussinesLink_item__large{
     width: 420px;
 }
 
 .bl_bussinesLink_item_inner{
-    padding-top: 10px;
+    padding: 10px 0px 0px;
     background-color: $cr-main;
-
+    text-align: center;
 }
-
+.bl_bussinesLink_item_body{
+    padding: 0px 16px 16px;
+}
+.bl_bussinesLink_thumb{
+    height: 200px;
+    object-fit: cover;
+}
 .bl_bussinesLink_ttl{
     text-align: center;
     font-size: 2.2rem;
     color: #fff;
+    padding-top:16px;
+}
+.bl_bussinesLink_btn{
+    display: block;
 }
