@@ -246,6 +246,10 @@ li {
 	max-width: 1000px;
 }
 
+.ly_sec {
+	margin-bottom: 5em;
+}
+
 /*!
  * ress.css • v3.0.1
  * MIT License
@@ -572,7 +576,9 @@ progress {
 	display: inline-block;
 	font-size: 1.6rem;
 	font-weight: 700;
-	padding: 1em 1.35em 1em 4em;
+	padding: 1em 0em 1em 1em;
+	text-align: center;
+	width: 166px;
 }
 
 .el_btn.el_btn__contact {
@@ -580,7 +586,14 @@ progress {
 	color: #fff;
 	font-size: 2.1rem;
 	font-weight: 700;
-	padding: 1em 1.35em 1em 4em;
+	padding: 1em 0em 1em 0em;
+	width: 237px;
+}
+
+.el_btn.el_btn__bgSub {
+	background-color: #AEEAF8;
+	color: #00387C;
+	width: 100%;
 }
 
 /*使い方*/
@@ -609,13 +622,29 @@ progress {
 
 .bl_bussinesLink_item_inner {
 	background-color: #00387C;
-	padding-top: 10px;
+	padding: 10px 0px 0px;
+	text-align: center;
+}
+
+.bl_bussinesLink_item_body {
+	padding: 0px 16px 16px;
+}
+
+.bl_bussinesLink_thumb {
+	-o-object-fit: cover;
+	height: 200px;
+	object-fit: cover;
 }
 
 .bl_bussinesLink_ttl {
 	color: #fff;
 	font-size: 2.2rem;
+	padding-top: 16px;
 	text-align: center;
+}
+
+.bl_bussinesLink_btn {
+	display: block;
 }
 
 /*使い方*/
@@ -625,6 +654,32 @@ progress {
 	color: yellow;
   }
   */
+
+.bl_card {
+	-ms-flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bl_card.bl_card__3col .bl_card_item {
+	width: 33%;
+}
+
+.bl_card_item {
+	margin-bottom: 25px;
+}
+
+.bl_card_lv3Heading {
+	color: #00387C;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 1.44444em;
+	margin-bottom: 0;
+	padding-top: 0.75em;
+	text-align: center;
+}
 
 /*使い方*/
 
@@ -1065,6 +1120,7 @@ progress {
 }
 
 .hp_mailIcon {
+	padding-left: 1em;
 	position: relative;
 }
 
@@ -1076,15 +1132,16 @@ progress {
 	background-size: contain;
 	content: "";
 	height: 1.5em;
+	left: -0.2em;
 	position: absolute;
 	position: absolute;
-	right: 100%;
 	top: 64%;
 	transform: translate(-50%, -50%);
 	width: 1.5em;
 }
 
 .hp_arrowIcon {
+	padding-left: 1em;
 	position: relative;
 }
 
@@ -1096,12 +1153,20 @@ progress {
 	background-size: contain;
 	content: "";
 	height: 1.5em;
+	left: -0.2em;
 	position: absolute;
 	position: absolute;
-	right: 100%;
 	top: 50%;
 	transform: translate(0%, -50%);
 	width: 1.5em;
+}
+
+.hp_arrowIcon.hp_arrowIcon__blue::before {
+	background-image: url(/images/common/arrow_blue.svg);
+}
+
+.hp_bgSub {
+	background-color: #AEEAF8;
 }
 
 /*使い方*/
@@ -1123,6 +1188,19 @@ progress {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 16px;
+}
+
+.el_topCenetence {
+	padding-bottom: 30px;
+}
+
+.un_topBusinessWrapper {
+	text-align: center;
+}
+
+.un_topBusinessWrapper .un_topBusinessBtn {
+	font-size: 1.7rem;
+	width: 310px;
 }
 
 /*使い方*/

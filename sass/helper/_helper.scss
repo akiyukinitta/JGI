@@ -88,6 +88,7 @@
 }
 .hp_mailIcon{
 	position: relative;
+	padding-left: 1em;
 }
 .hp_mailIcon::before{
 	position: absolute;
@@ -97,13 +98,14 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 64%;
-	right: 100%;
+	left: -0.2em;
 	transform: translate(-50%, -50%);
 	width: 1.5em;
 	height: 1.5em;
 }
 .hp_arrowIcon{
 	position: relative;
+	padding-left: 1em;
 }
 .hp_arrowIcon::before{
 	position: absolute;
@@ -113,8 +115,14 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 50%;
-	right: 100%;
+	left: -0.2em;
 	transform: translate(0%, -50%);
 	width: 1.5em;
 	height: 1.5em;
+}
+.hp_arrowIcon.hp_arrowIcon__blue::before{
+	background-image: url(/images/common/arrow_blue.svg);
+}
+.hp_bgSub{
+	background-color: $cr-sub;
 }
