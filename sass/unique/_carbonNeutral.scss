@@ -18,6 +18,26 @@
     transform: translateY(-50%);
 }
 
+@media only screen and (max-width: 768px) {
+    .ly_carbonNeutralTop {
+        background-color: #00387c;
+        height: 200px;
+    }
+
+    .el_mvTitle {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        line-height: 1.5;
+        padding: 42px 0;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .un_carbonNeutral_head {
     text-align: center;
     margin-top: 60px;
@@ -26,10 +46,30 @@
 
 .un_carbonNeutral_head_firstTitle {
     font-size: 32px;
+    font-weight: 700;
 }
 
 .un_carbonNeutral_head_secondTitle {
     font-size: 24px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .un_carbonNeutral_head {
+        text-align: center;
+        margin-top: 40px;
+        color: #00387c;
+    }
+
+    .un_carbonNeutral_head_firstTitle {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .un_carbonNeutral_head_secondTitle {
+        font-size: 24px;
+        font-weight: 700;
+    }
 }
 
 .un_carbonNeutral_line {
@@ -50,6 +90,24 @@
     margin-top: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+    .un_carbonNeutral_text {
+        font-size: 16px;
+    }
+
+    .un_undersea_css_project_diagram_image {
+        margin-top: 17px;
+    }
+
+    .un_undersea_css_project_diagram_image {
+        margin-top: 40px;
+    }
+
+    .un_undersea_css_project_bottom_text {
+        margin-top: 35px;
+    }
+}
+
 .un_workflow_image {
     margin-top: 75px;
 }
@@ -64,6 +122,16 @@
 
 .un_geothermal_resource_development_image{
     margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .un_seismic_exploration_image {
+        margin-top: 36px;
+    }
+
+    .un_geothermal_resource_development_image{
+        margin-top: 27px;
+    }
 }
 
 .un_carbonNeutral_button_box {
@@ -82,4 +150,44 @@
     text-align: center;
     width: 310px;
     height: 64px;
+}
+
+@media only screen and (max-width: 768px) {
+    .un_carbonNeutral_button_box {
+        margin-top: 27px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .un_carbonNeutral_button {
+        background-color: #00387C;
+        color: #fff;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 20px 0em 20px 1em;
+        text-align: center;
+        width: 314px;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pc_display{
+        display: block;
+    }
+
+    .sp_display{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .pc_display{
+        display: none;
+    }
+
+    .sp_display{
+        display: block;
+    }
 }
