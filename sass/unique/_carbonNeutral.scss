@@ -1,0 +1,85 @@
+@import "settings";
+
+.ly_carbonNeutralTop {
+    background-color: #00387c;
+    height: 240px;
+}
+
+.el_mvTitle {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    padding: 42px 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.un_carbonNeutral_head {
+    text-align: center;
+    margin-top: 60px;
+    color: #00387c;
+}
+
+.un_carbonNeutral_head_firstTitle {
+    font-size: 32px;
+}
+
+.un_carbonNeutral_head_secondTitle {
+    font-size: 24px;
+}
+
+.un_carbonNeutral_line {
+    border-bottom: 5px solid #00387c;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.un_carbonNeutral_text {
+    font-size: 18px;
+}
+
+.un_undersea_css_project_diagram_image {
+    margin-top: 35px;
+}
+
+.un_undersea_css_project_bottom_text {
+    margin-top: 25px;
+}
+
+.un_workflow_image {
+    margin-top: 75px;
+}
+
+.un_seismic_exploration_image {
+    margin-top: 50px;
+}
+
+.un_carbonNeutral_image_block {
+    text-align: center;
+}
+
+.un_geothermal_resource_development_image{
+    margin-top: 50px;
+}
+
+.un_carbonNeutral_button_box {
+    margin-top: 100px;
+    margin-bottom: 86px;
+    text-align: center;
+}
+
+.un_carbonNeutral_button {
+    background-color: #00387C;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 20px 0em 20px 1em;
+    text-align: center;
+    width: 310px;
+    height: 64px;
+}
