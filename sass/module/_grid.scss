@@ -1,0 +1,23 @@
+@import "settings";
+.bl_grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bl_grid.bl_grid__2col{
+    .bl_grid_item{
+width: 50%;
+    }
+}
+.bl_grid_item{
+    margin-bottom: 25px;
+    }
+.bl_grid_lv3Heading{
+    text-align: center;
+    color: $cr-main;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    line-height: func-em(26,18);
+    padding-top: 0.75em;
+    margin-bottom: 0;
+}
