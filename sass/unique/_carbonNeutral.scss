@@ -173,21 +173,21 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .pc_display{
+    .un_pc_display{
         display: block;
     }
 
-    .sp_display{
+    .un_sp_display{
         display: none;
     }
 }
 
 @media only screen and (max-width: 767.9px) {
-    .pc_display{
+    .un_pc_display{
         display: none;
     }
 
-    .sp_display{
+    .un_sp_display{
         display: block;
     }
 }
