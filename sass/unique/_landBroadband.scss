@@ -4,7 +4,7 @@
 .un_landBroadband_head {
 
 }
-.un_landBroadband_head_ttl {
+.un_landBroadband_lv2Heading {
     font-size: 2.8rem;
     letter-spacing: 0.1em;
     line-height: func-em(40,28);
@@ -12,11 +12,20 @@
     text-align: center;
     color: $cr-main;
     margin-bottom: 40px;
+    @include mq(md) {
+        font-size: 2rem;
+        line-height: func-em(32,20);
+        margin-bottom: 31px;
+    }
 }
 .un_landBroadband_head_txt {
     font-size: 1.8rem;
     letter-spacing: 0.06em;
     line-height: func-em(32,18);
+    @include mq(md) {
+        font-size: 1.6rem;
+        line-height: func-em(28,16);
+    }
 }
 
 .un_landBroadband_list {
@@ -28,9 +37,15 @@
 .un_landBroadband_item {
     width: 100%;
     margin-bottom: 56px;
+    @include mq(md) {
+        margin-bottom: 38px;
+    }
 }
 .un_landBroadband_item.un_landBroadband_item__half {
     width: calc(50% - 8px);
+    @include mq(md) {
+        width: 100%;
+    }
 }
 
 .un_landBroadband_item_ttl::before {
@@ -41,13 +56,26 @@
     width: 16px;
     height: 16px;
     margin: 1px 1px 0 0;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0,-50%);
+    @include mq(md) {
+        margin: 0;
+        left: -16px;
+    }
 }
 .un_landBroadband_item_ttl {
     color: $cr-main;
     font-size: 2rem;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    position: relative;
+    left: 20px;
+    @include mq(md) {
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        left: 16px;
+    }
 }
 .un_landBroadband_item_img {
     width: 100%;
@@ -65,6 +93,9 @@
     letter-spacing: 0.06em;
     line-height: func-em(32,18);
     margin-top: 16px;
+    @include mq(md) {
+        line-height: func-em(28,18);
+    }
 }
 
 .un_landBroadbandBtnWrapper {

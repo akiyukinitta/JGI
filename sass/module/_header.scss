@@ -6,6 +6,7 @@
   // @include mq(xl) {
   //   padding: 20px 0;
   // }
+  z-index: 999;
   @include mq(md) {
     position: fixed;
     background-color: #fff;

@@ -35,3 +35,15 @@ $('#page-top a').click(function () {
     }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
     return false;//リンク自体の無効化
 });
+
+// スムーススクロール
+$(function () {
+  $('.anchor').click(function () {
+    var time = 500;
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top -82;
+    $("html,body").animate({ scrollTop: position}, time, "swing");
+    return false;
+  });
+});

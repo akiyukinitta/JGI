@@ -4,12 +4,35 @@
     height: 510px;
     padding-top: 22.2222%;
     position: relative;
+    @include mq(md) {
+        height: 404px;
+        margin-top: 82px;
+    }
 }
-#businessField.ly_MV {
+#businessField .ly_MV {
     background-image: url(/images/businessField/mv.jpg);
+    @include mq(md) {
+        background-image: url(/images/businessField/mv_sp.jpg);
+    }
 }
-#landBroadband.ly_MV {
+#landBroadband .ly_MV {
     background-image: url(/images/landBroadband/mv.jpg);
+    @include mq(md) {
+        background-image: url(/images/landBroadband/mv_sp.jpg);
+    }
+}
+#about .ly_MV {
+    background-image: url(/images/about/mv.jpg);
+    @include mq(md) {
+        background-image: url(/images/about/mv_sp.jpg);
+    }
+}
+#links .ly_MV {
+    height: 180px;
+    padding-top: 0;
+    @include mq(md) {
+        height: 200px;
+    }
 }
 .ly_MV_inner {
     background-color:  #00387C99;
@@ -21,19 +44,19 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    @include mq(md) {
+        height: 200px;
+    }
+}
+#landBroadband .ly_MV_inner {
+    @include mq(md) {
+        padding: 24px 0;
+        height: auto;
+    }
+}
+#links .ly_MV_inner {
+    background-color:  $cr-main;
 }
 .ly_MV_inner__black {
     background-color:  #2B2B2B99;
-}
-
-@include mq(md) {
-    .ly_MV {
-        height: 404px;
-    }
-    #businessField.ly_MV {
-        background-image: url(/images/businessField/mv_sp.jpg);
-    }
-    .ly_MV_inner {
-        height: 200px;
-    }
 }
