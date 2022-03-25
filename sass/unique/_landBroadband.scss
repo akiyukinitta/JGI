@@ -4,7 +4,7 @@
 .un_landBroadband_head {
 
 }
-.un_landBroadband_head_ttl {
+.un_landBroadband_lv2Heading {
     font-size: 2.8rem;
     letter-spacing: 0.1em;
     line-height: func-em(40,28);
@@ -41,13 +41,17 @@
     width: 16px;
     height: 16px;
     margin: 1px 1px 0 0;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0,-50%);
 }
 .un_landBroadband_item_ttl {
     color: $cr-main;
     font-size: 2rem;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    position: relative;
+    left: 20px;
 }
 .un_landBroadband_item_img {
     width: 100%;
@@ -81,4 +85,27 @@
 .ly_landBroadband .un_landBroadbandBtn {
     font-size: 1.7rem;
     width: 310px;
+}
+
+@include mq(md) {
+    .un_landBroadband_lv2Heading {
+        font-size: 2rem;
+        line-height: func-em(32,20);
+        margin-bottom: 31px;
+    }
+    .un_landBroadband_item.un_landBroadband_item__half {
+        width: 100%;
+    }
+    .un_landBroadband_item_ttl::before {
+        margin: 0;
+        left: -16px;
+    }
+    .un_landBroadband_item_ttl {
+        font-size: 1.5rem;
+        letter-spacing: -0.02;
+        left: 16px;
+    }
+    .un_landBroadband_item_txt {
+        line-height: func-em(28,18);
+    }
 }

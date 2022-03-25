@@ -1,6 +1,14 @@
 .ly_businessField {
     margin: 55px 0 80px 0;
 }
+.un_MV_txt {
+    color:  #fff;
+    font-size:  1.8rem;
+    text-align:  center;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    line-height: func-em(32,18);
+}
 .un_businessField_head {
 
 }
@@ -101,6 +109,12 @@
 }
 
 @include mq(md) {
+    .un_MV_txt {
+        padding: 10px 30px 0 30px;
+        font-size:  1.6rem;
+        text-align:  left;
+        line-height: func-em(28,16);
+    }
     .un_businessField_lv2Heading {
         text-align: left;
         line-height: func-em(36,28);
@@ -143,7 +157,7 @@
     .un_businessField_list_item__col4 .un_businessField_list_item_desc {
         margin-left: 0;
         padding: 13px 0 19px 0;
-        line-height: func-em(32,24);
+        line-height: func-em(24,32);
     }
     .un_businessField_list_item__col1 {
         flex-direction: column-reverse;

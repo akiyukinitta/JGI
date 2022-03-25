@@ -3,6 +3,33 @@
 .ly_overview {
 margin-top: 54px;
 }
+.un_aboutNav {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 8px 0;
+}
+.un_aboutNav_item {
+    padding: 0px 20px 0;
+    position: relative;
+}
+.un_aboutNav_item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+.un_aboutNav_item:last-child.un_aboutNav_item::after {
+    content: none;
+}
+
+.un_aboutNav_item_link {
+    color: #fff;
+    font-size: 2rem;
+}
 
 .un_about_ttl{
     font-size: 2rem;
