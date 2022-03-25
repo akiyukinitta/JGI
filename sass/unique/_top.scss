@@ -47,8 +47,8 @@ top: 14px;
     @include mq(md) {
 margin-bottom: 16px;
 font-size: 1.8rem;
-padding-right: 30px;
-padding-left: 30px;
+padding-right: 24px;
+padding-left: 24px;
        }
 }
 .slick_topMvSlide_item{
@@ -63,7 +63,7 @@ padding-left: 30px;
     }
 }
 .slick_topMvSlide_item.slick_topMvSlide_item02{
-    background-image: url(../../images/top/mv02.jpg);
+background: #bbe599;
     @include mq(md) {
         // background-image: url(../../images/top/mv-sp.jpg);
     background-image: none;
@@ -71,13 +71,22 @@ padding-left: 30px;
     }
 }
 .slick_topMvSlide_item.slick_topMvSlide_item03{
-    background-image: url(../../images/top/mv03.jpg);
+    background: #53bad7;
     @include mq(md) {
         // background-image: url(../../images/top/mv-sp.jpg);
     background-image: none;
     min-height: auto;
     }
 }
+.slick_topMvSlide_item.slick_topMvSlide_item04{
+    background: #d76053;
+    @include mq(md) {
+        // background-image: url(../../images/top/mv-sp.jpg);
+    background-image: none;
+    min-height: auto;
+    }
+}
+d76053
 /*---------------------------------
   コンテンツ
 ---------------------------------*/

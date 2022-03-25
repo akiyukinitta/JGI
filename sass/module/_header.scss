@@ -86,6 +86,7 @@ max-width: 160px;
   @include mq(md) {
     display: block;
     height: 100vh;
+    overflow: scroll;
   }
 }
 .bl_headerNavList {
@@ -111,6 +112,7 @@ max-width: 160px;
   .el_btn.el_btn__contact{
     width: 100%;
     max-width: 412px;
+    margin-bottom: 60px;
   }
 }
 
