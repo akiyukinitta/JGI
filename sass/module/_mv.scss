@@ -4,7 +4,6 @@
     height: 510px;
     padding-top: 22.2222%;
     position: relative;
-    margin-top: 82px;
 }
 #businessField .ly_MV {
     background-image: url(/images/businessField/mv.jpg);
@@ -34,6 +33,7 @@
 @include mq(md) {
     .ly_MV {
         height: 404px;
+        margin-top: 82px;
     }
     #businessField .ly_MV {
         background-image: url(/images/businessField/mv_sp.jpg);
