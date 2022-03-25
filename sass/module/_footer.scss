@@ -16,6 +16,10 @@
   .bl_footerNav {
 	display: flex;
 	margin-bottom: 48px;
+
+  @include mq(md) {
+    display: block;
+  }
   }
   
   .bl_footerNav_item {
@@ -79,23 +83,39 @@
 	padding: func-em(23,12) 0 func-em(20,12);
 	text-align: center;
   }
-  
+
   .ly_footerBottom{
-	  display: flex;
-	  justify-content: space-between;
 	  padding-bottom: 46px;
   }
-  .bl_footerBottomNav{
-	  display: flex;
+  .bl_footerUtils{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    
+  @include mq(md) {
+    display: block;
   }
-  .bl_footerBottomNav_item{
+  }
+  .bl_footerBottomNavLink{
+	  display: flex;
+    margin-left: -1em;
+    @include mq(md) {
+    flex-wrap: wrap;
+    }
 
   }
-  .bl_footerBottomNav_link{
+  .bl_footerBottomNavLink_item{
+
+  }
+  .bl_footerBottomNavLink_item.bl_footerBottomNavLink_item__sp{
+    width: 100%;
+  }
+  .bl_footerBottomNavLink_link{
 	position: relative;
 	padding: 1em;
   }
-  .bl_footerBottomNav_link::after {
+  .bl_footerBottomNavLink_link::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -106,3 +126,6 @@
     transform: translateY(-50%);
   }
   
+  .bl_CertificationItem{
+    text-align: right;
+  }

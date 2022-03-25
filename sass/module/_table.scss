@@ -11,7 +11,7 @@
   }
   
   .bl_horizTable th {
-    width: 30%;
+    width: 26%;
     padding: 15px;
     border-bottom: 1px solid #707070;
     font-weight: 500;
@@ -20,14 +20,34 @@
     padding-left: 53px;
     line-height: func-em(32,18);
     font-size: 1.6rem;
+
+    @include mq(md) {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+      border-bottom: none;
+      color: $cr-main;
+      padding-bottom: 0;
+      font-size: 1.4rem;
+    }
   }
   
   .bl_horizTable td {
     padding: 15px;
     border-bottom: 1px solid #707070;
     font-size: 1.8rem;
+    padding-left: 0;
+    @include mq(md) {
+      display: block;
+      width: 100%;
+      font-size: 1.6rem;
+    }
     address{
         margin-bottom: func-em(40,18);
+        font-size: 1.6rem;
+        @include mq(md) {
+          margin-bottom: func-em(34,16);
+        }
         &:last-of-type{
             margin-bottom: 0;
         }

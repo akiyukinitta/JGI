@@ -1,25 +1,57 @@
 @import "settings";
-.ly_topMV{
-    margin-bottom: 53px;
-    img{
-        width: 100%;
-    }
+.ly_topMV {
+  margin-bottom: 53px;
+  img {
+    width: 100%;
+  }
 }
-.ly_topTopics_head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 16px;
+.ly_topTopics_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
 }
-.el_topCenetence{
-padding-bottom: 30px;
+.el_topCenetence {
+  padding-bottom: 30px;
 }
 .ly_topBusiness {
-    .un_topBusinessBtn{
-        width: 310px;
-        font-size: 1.7rem;
-    }
+  .un_topBusinessBtn {
+    width: 310px;
+    font-size: 1.7rem;
+  }
 }
-.un_topBusinessBtnWrapper{
-    text-align: center;
+.un_topBusinessBtnWrapper {
+  text-align: center;
+}
+
+.un_topBusinessCard {
+  justify-content: center;
+  margin-left: -36px;
+  .bl_card_item {
+    padding-left: 36px;
+    img {
+      width: 100%;
+    }
+
+    @include mq(md) {
+      width: 50% !important;
+    }
+
+    @include mq(sm) {
+      width: 100% !important;
+    }
+  }
+}
+.ly_topTopics {
+  .bl_topics {
+    margin-bottom: 30px;
+  }
+  .el_btn {
+    @include mq(md) {
+      width: 100%;
+      max-width: 412px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

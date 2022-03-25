@@ -16,13 +16,18 @@ import $ from 'jquery';
 
   */
 
+  /*
   $(function(){
     $('.btn-trigger').on('click', function() {
       $(this).toggleClass('active');
-      $('.bl_headerNavWrapper').toggleClass('active');
-      $('.bl_headerNavBg').toggleClass('active');
+      $('.bl_headerNavListWrapper').toggleClass('active');
+      $('.bl_headerNavListBg').toggleClass('active');
       return false;
     });
   });
 
-  
+  */
+
+  $(".openbtn").click(function () {
+    $(this).toggleClass('active');
+});

@@ -8,10 +8,17 @@
     .bl_card_item{
 width: 33%;
     }
+    
 }
 .bl_card_item{
     margin-bottom: 25px;
     }
+    .bl_card_item.bl_card_item__radius{
+        img{
+border-radius: 27px;
+        }
+        
+        }
 .bl_card_lv3Heading{
     text-align: center;
     color: $cr-main;
