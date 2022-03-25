@@ -54,10 +54,9 @@
     border: solid 3px $cr-main;
     border-radius: 25px;
     background-color: #E2F9FF;
-    width: calc(33.333333% - 12px);
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
     @include mq(md) {
         width: 100%;
         margin-bottom: 25px;
