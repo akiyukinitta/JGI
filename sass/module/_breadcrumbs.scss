@@ -1,6 +1,33 @@
 @import "settings";
 
-.breadcrumbs{
-    margin-top: func-em(20px,16px);
-    margin-bottom: func-em(54px,16px);
+.bl_breadcrumbs {
+    position: absolute;
+    top: 0;
+    z-index: 999;
 }
+.bl_breadcrumbs_list {
+    display: flex;
+    margin-top: 4px;
+}
+.bl_breadcrumbs_item {
+    margin-left: 20px;
+}
+.bl_breadcrumbs_item_link {
+    color: #fff;
+    position: relative;
+    font-size: 1.4rem;
+}
+#businessField .bl_breadcrumbs_item_link {
+    color: #808080;
+}
+.bl_breadcrumbs_item_link::after {
+    display: block;
+    content: attr(title);
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+// .breadcrumbs{
+//     margin-top: func-em(20px,16px);
+//     margin-bottom: func-em(54px,16px);
+// }
