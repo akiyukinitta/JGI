@@ -1,16 +1,20 @@
 @import "settings";
 .el_lv1Heading {
-background-color:  #00387C99;
 color:  #fff;
 font-size:  3.2rem;
 text-align:  center;
 font-weight: bold;
 letter-spacing: 0.2em;
-padding: 42px 0;
 line-height: func-em(50,32);
+margin-bottom: 8px;
 }
-.el_lv1Heading__black {
-background-color:  #2B2B2B99;
+.el_lv1Heading_txt {
+color:  #fff;
+font-size:  1.8rem;
+text-align:  center;
+font-weight: bold;
+letter-spacing: 0.2em;
+line-height: func-em(32,18);
 }
 
 .el_topLv2Heading{

@@ -1,7 +1,28 @@
 .ly_MV {
-    background-image: url(/images/landBroadband/mv.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 510px;
     padding-top: 22.2222%;
+    position: relative;
+}
+#businessField.ly_MV {
+    background-image: url(/images/businessField/mv.jpg);
+
+}
+#landBroadband.ly_MV {
+    background-image: url(/images/landBroadband/mv.jpg);
+}
+.ly_MV_inner {
+    background-color:  #00387C99;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.ly_MV_inner__black {
+    background-color:  #2B2B2B99;
 }
