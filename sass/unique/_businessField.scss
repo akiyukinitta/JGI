@@ -54,9 +54,10 @@
     border: solid 3px $cr-main;
     border-radius: 25px;
     background-color: #E2F9FF;
+    width: calc(33.333333% - 12px);
     display: flex;
-    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     @include mq(md) {
         width: 100%;
         margin-bottom: 25px;
@@ -65,8 +66,9 @@
 .un_businessField_list_item__col3 {
     width: calc(33.333333% - 12px);
     flex-direction: column-reverse;
+    height: 440px;
     @include mq(md) {
-        height: 345px;
+        height: 440px;
     }
 }
 .un_businessField_list_item__col4 {
@@ -83,7 +85,7 @@
     flex-direction: row-reverse;
     padding: 23px;
     @include mq(md) {
-        flex-direction: column-reverse;
+        
     }
 }
 .un_businessField_list_item__col4:nth-of-type(3),
@@ -111,6 +113,12 @@
     @include mq(md) {
         padding: 18px 0 33px 0;
     }
+}
+.un_businessField_list_item.un_businessField_list_item__col3:nth-of-type(1) .un_businessField_list_item_desc {
+    padding: 0px 0 24px 0;
+}
+.un_businessField_list_item.un_businessField_list_item__col3 .un_businessField_list_item_desc {
+    padding: 24px 0 28px 0;
 }
 .un_businessField_list_item__col4 .un_businessField_list_item_desc {
     margin-left: 45px;
@@ -160,9 +168,12 @@
 
 .un_businessFieldBtnWrapper {
     text-align: center;
-    margin-top: 30px;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .el_btn.un_businessFieldBtn {
     font-size: 1.7rem;
-    width: 310px;
+    width: 100%;
 }
