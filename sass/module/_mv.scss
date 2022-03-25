@@ -34,6 +34,13 @@
         height: 200px;
     }
 }
+#carbonNeutral .ly_MV {
+    height: 240px;
+    padding-top: 0;
+    @include mq(md) {
+        height: 200px;
+    }
+}
 .ly_MV_inner {
     background-color:  #00387C99;
     height: 180px;
@@ -55,6 +62,11 @@
     }
 }
 #links .ly_MV_inner {
+    background-color:  $cr-main;
+}
+
+#carbonNeutral .ly_MV_inner {
+    height: 240px;
     background-color:  $cr-main;
 }
 .ly_MV_inner__black {
