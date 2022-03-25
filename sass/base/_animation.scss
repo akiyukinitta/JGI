@@ -58,3 +58,14 @@ opacity: 0.8;
 
 	}
 }
+.anime_hoverMainColor{
+&:hover{
+	color: $cr-main;
+}
+}
+.anime_hoverOpacity{
+	transition: 0.8;
+	&:hover{
+		opacity: 0.8;
+	}
+}

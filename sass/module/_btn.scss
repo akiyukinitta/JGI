@@ -8,6 +8,10 @@
     display: inline-block;
     width: 166px;
     text-align: center;
+    transition: 0.8;
+    &:hover{
+opacity: 0.8;
+    }
 }
   
 .el_btn.el_btn__contact{

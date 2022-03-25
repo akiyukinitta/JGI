@@ -10,6 +10,8 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
+    z-index: 99;
+    top: 0;
   }
 }
 
@@ -125,6 +127,30 @@ max-width: 160px;
   text-decoration: none;
   transition: 0.25s;
   font-weight: bold;
+  span{
+    position: relative;
+    &::after{
+    transition: 0.8s;
+    content: "";
+    transition: 0.8s;
+    width: 0;
+    height: 3px;
+    background-color: $cr-main;
+    left: 0;
+    position: absolute;
+    bottom: -8px;
+
+    opacity: 0;
+    }
+  }
+
+  &:hover{
+    color: $cr-main;
+    span::after{
+opacity: 1;
+width: 100%;
+    }
+  }
   @include mq(md) {
     color: $cr-main;
 padding-left: 1em;
@@ -173,6 +199,7 @@ padding: 0;
   position: absolute;
   left: 0;
   text-align: left;
+  z-index: 99;
   .bl_bussinesLink_list {
     justify-content: center;
   }

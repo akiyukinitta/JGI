@@ -126,3 +126,20 @@
 .hp_bgSub{
 	background-color: $cr-sub;
 }
+
+.hp_contentnone{
+	&::before,	&::after{
+		content: none;
+	}
+}
+.hp_spContentNone{
+	@include mq(md) { 
+		&::before,	&::after{
+			content: none;
+		}
+    }
+}
+
+.hp_pointerNone{
+	pointer-events: none;
+}

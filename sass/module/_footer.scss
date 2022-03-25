@@ -2,8 +2,12 @@
 .ly_footer {
 	padding-top: 56px;
 	border-top: 1px solid #D0D0D0;
+
+  @include mq(md) {
+    display: block;
   }
-  
+  }
+
   
   .ly_footer_inner {
 	max-width: 1230px;
@@ -24,6 +28,9 @@
   
   .bl_footerNav_item {
 	  padding-right: 3.45em;
+    @include mq(md) {
+padding-right: 0;
+        }
   }
   .bl_footerNav01{
 
@@ -48,11 +55,14 @@
 	text-decoration: none;
 	font-size: 2rem;
 	font-weight: bold;
+  @include mq(md) {
+font-size: 1.6rem;
+  }
   }
   
   .bl_footerNav_link:focus,
   .bl_footerNav_link:hover {
-	text-decoration: underline;
+	// text-decoration: underline;
   }
   
 
@@ -91,8 +101,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 
-    
+    @include mq(xl) {
+      display: block;
+    }
   @include mq(md) {
     display: block;
   }
@@ -100,6 +113,7 @@
   .bl_footerBottomNavLink{
 	  display: flex;
     margin-left: -1em;
+    flex-wrap: wrap;
     @include mq(md) {
     flex-wrap: wrap;
     }
@@ -109,7 +123,9 @@
 
   }
   .bl_footerBottomNavLink_item.bl_footerBottomNavLink_item__sp{
-    width: 100%;
+    @include mq(md) {
+      width: 100%;
+      }
   }
   .bl_footerBottomNavLink_link{
 	position: relative;
@@ -128,4 +144,8 @@
   
   .bl_CertificationItem{
     text-align: right;
+  }
+
+  .bl_CertificationList{
+padding-top: 30px;
   }

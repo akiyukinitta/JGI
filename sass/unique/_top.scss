@@ -1,10 +1,86 @@
 @import "settings";
 .ly_topMV {
   margin-bottom: 53px;
+  position: relative;
+  @include mq(md) {
+margin-top: 82px;
+}
   img {
     width: 100%;
   }
+  .slick-dots{
+position: absolute;
+left: 48px;
+bottom: 24px;
+text-align: left;
+
+@include mq(md) {
+top: 0;
+bottom: auto;
+left: auto;
+right: 14px;
+text-align: right;
+top: 14px;
 }
+  }
+}
+.ly_topMV_cont{
+    position: absolute;
+    right: 90px;
+    bottom: 10%;
+    display: flex;
+    align-items: flex-end;
+    @include mq(md) {
+       display: block;
+       text-align: center;
+
+       right: 0;
+       left: 0;
+    //    transform: translateX(-50%);
+      }
+}
+.ly_topMV_centence{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: $cr-main;
+    padding-right: 24px;
+    @include mq(md) {
+margin-bottom: 16px;
+font-size: 1.8rem;
+padding-right: 30px;
+padding-left: 30px;
+       }
+}
+.slick_topMvSlide_item{
+    background-image: url(../../images/top/mv.jpg);
+    min-height: 510px;
+    background-size: cover;
+    background-position: center right;
+    @include mq(md) {
+        // background-image: url(../../images/top/mv-sp.jpg);
+    background-image: none;
+    min-height: auto;
+    }
+}
+.slick_topMvSlide_item.slick_topMvSlide_item02{
+    background-image: url(../../images/top/mv02.jpg);
+    @include mq(md) {
+        // background-image: url(../../images/top/mv-sp.jpg);
+    background-image: none;
+    min-height: auto;
+    }
+}
+.slick_topMvSlide_item.slick_topMvSlide_item03{
+    background-image: url(../../images/top/mv03.jpg);
+    @include mq(md) {
+        // background-image: url(../../images/top/mv-sp.jpg);
+    background-image: none;
+    min-height: auto;
+    }
+}
+/*---------------------------------
+  コンテンツ
+---------------------------------*/
 .ly_topTopics_head {
   display: flex;
   align-items: center;
@@ -54,4 +130,12 @@
       margin-right: auto;
     }
   }
+}
+
+.un_topBusinessCard01{
+width: 359px !important;
+}
+
+.un_topBusinessCard02{
+width: 335px !important;
 }
