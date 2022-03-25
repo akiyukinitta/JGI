@@ -14,7 +14,7 @@
     padding: 42px 0;
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 }
 
@@ -194,4 +194,11 @@
     .un_text_sp{
         font-size: 16px;
     }
+}
+
+.un_left_top_link{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 28px;
+    padding-top: 10px;
 }
