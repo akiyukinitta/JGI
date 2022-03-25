@@ -1,77 +1,277 @@
 @import "settings";
 
 .ly_header {
-    padding-top: 20px;
-    border-bottom: 1px solid #ddd;
-    
+  // padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+  // @include mq(xl) {
+  //   padding: 20px 0;
+  // }
+  @include mq(md) {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
   }
-  
-  .ly_header_inner {
-    max-width: 1230px;
+}
+
+.ly_header_inner {
+  max-width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_headerUtils {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin-bottom: 40px;
+  padding-left: 2em;
+  @include mq(md) {
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 18px;
     padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
-  
-  .bl_headerUtils {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // margin-bottom: 40px;
-    padding-left: 2em;
+}
+.bl_headerUtilsRight {
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    display: none;
   }
-  .bl_headerUtilsRight{
-      display: flex;
-      align-items: center;
+}
+.bl_headerUtilsRight_centence {
+  color: #00387c;
+  font-size: 20px;
+  padding-right: 1.2em;
+  @include mq(xl) {
+    font-size: 16px;
   }
-  .bl_headerUtilsRight_centence{
-    color: #00387C;
-    font-size: 20px;
-    padding-right: 1.2em;
+
+  @media screen and (max-width: 1032px) {
+    display: none;
   }
-  .bl_headerUtilsLeft{
-    display: flex;
-    align-items: center;
+}
+.bl_headerUtilsLeft {
+  display: flex;
+  align-items: center;
+  @include mq(xl) {
+    flex: 1;
+    max-width: 40%;
   }
-  .bl_headerUtils_logo {
-    padding-right: 24px;
+  @include mq(md) {
+max-width: 160px;
   }
-  
-  .bl_headerNav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #E2F9FF;
+}
+.bl_headerUtils_logo {
+  padding-right: 24px;
+  @include mq(xl) {
+    padding-right: 12px;
   }
-  
-  .bl_headerNav_item {
-    flex-grow: 1;
-    text-align: center;
+
+  img{
+    vertical-align: middle;
   }
-  
-  .bl_headerNav_item:last-child .bl_headerNav_link::after {
-    content: none;
+}
+.bl_headerNav{
+  @include mq(md) {
+    display: none;
   }
-  
-  .bl_headerNav_link {
-    position: relative;
+}
+.bl_headerNav.active{
+  @include mq(md) {
     display: block;
-    padding: 24px 5px;
-    border-bottom: 4px solid transparent;
-    color: #222;
-    font-size: 2.2rem;
-    text-decoration: none;
-    transition: .25s;
+    height: 100vh;
   }
-  
-  .bl_headerNav_link::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 3px;
-    height: 54px;
-    background-color: #000;
-    transform: translateY(-50%);
+}
+.bl_headerNavList {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e2f9ff;
+  @include mq(md) {
+    display: block;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
+}
+
+.bl_headerNavList_item {
+  flex-grow: 1;
+  text-align: center;
+  @include mq(md) {
+   text-align: left;
+   padding-top: 28px;
+  }
+
+  .el_btn.el_btn__contact{
+    width: 100%;
+    max-width: 412px;
+  }
+}
+
+.bl_headerNavList_item:last-child .bl_headerNavList_link::after {
+  content: none;
+}
+
+.bl_headerNavList_link {
+  position: relative;
+  display: block;
+  padding: 24px 5px;
+  border-bottom: 4px solid transparent;
+  color: #222;
+  font-size: 2.2rem;
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: bold;
+  @include mq(md) {
+    color: $cr-main;
+padding-left: 1em;
+border-bottom: 0;
+
+padding: 0;
+  }
+  &::after{
+    @include mq(md) {
+      content: none;
+    }
+  }
+
+  &::before{
+    @include mq(md) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      transform: translateY(-50%);
+
+      background-image: url(../../images/common/nav_arrow-icon.svg);
+      background-size: contain;
+    }
+  }
+}
+
+.bl_headerNavList_link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 3px;
+  height: 54px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
+.bl_headerNavListChild {
+  display: none;
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 2em 2em;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  .bl_bussinesLink_list {
+    justify-content: center;
+  }
+  @include mq(md) {
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    padding-left: 16px;
+    padding-top: 24px;
+  }
+}
+.bl_headerNavListChild.bl_headerNavListChild__child{
+  @include mq(md) {
+    display: none;
+  }
+  display: none;
+}
+.bl_headerNavListChild:hover {
+  display: block;
+}
+.bl_headerNavList_link:hover + .bl_headerNavListChild {
+  display: block;
+}
+.bl_headerNavListChild_gotoTop {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: $cr-main;
+  margin-bottom: 1.25em;
+  display: inline-block;
+}
+.bl_headerNavListChild_link{
+  font-size: 1.6rem;
+  color: $cr-main;
+}
+
+/*---------------------------------
+    humburger
+  ---------------------------------*/
+
+/*==================================================
+　5-2-1 3本線が×に
+===================================*/
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn {
+  /*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+  position: relative;
+  background: #00387C;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 7px;
+  display: none;
+  @include mq(md) { 
+display: block;
+        }
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 1px;
+  border-radius: 2px;
+  background: #fff;
+  width: 20px;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0; /*真ん中の線は透過*/
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}

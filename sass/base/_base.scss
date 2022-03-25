@@ -16,13 +16,13 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 body {
     font-family: 'Noto Sans JP', sans-serif;
 	font-size: $fz-base;
 	font-weight: 500;
 	color: $cr-txt;
 	line-height: 1.5;
+	letter-spacing: 0.06em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
@@ -60,10 +60,12 @@ em {
 button:focus {
 	outline:0;
 }
+address{
+	font-style: normal;
+}
 
 
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 	body {
 		font-size: 1.6rem;
 	}
@@ -84,4 +86,7 @@ padding-right: 30px;
 }
 .ly_sec{
 margin-bottom: 5em;
+@include mq(md) { 
+margin-bottom: 60px;
+		}
 }
