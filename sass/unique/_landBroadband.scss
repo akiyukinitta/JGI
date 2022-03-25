@@ -12,11 +12,20 @@
     text-align: center;
     color: $cr-main;
     margin-bottom: 40px;
+    @include mq(md) {
+        font-size: 2rem;
+        line-height: func-em(32,20);
+        margin-bottom: 31px;
+    }
 }
 .un_landBroadband_head_txt {
     font-size: 1.8rem;
     letter-spacing: 0.06em;
     line-height: func-em(32,18);
+    @include mq(md) {
+        font-size: 1.6rem;
+        line-height: func-em(28,16);
+    }
 }
 
 .un_landBroadband_list {
@@ -28,9 +37,15 @@
 .un_landBroadband_item {
     width: 100%;
     margin-bottom: 56px;
+    @include mq(md) {
+        margin-bottom: 38px;
+    }
 }
 .un_landBroadband_item.un_landBroadband_item__half {
     width: calc(50% - 8px);
+    @include mq(md) {
+        width: 100%;
+    }
 }
 
 .un_landBroadband_item_ttl::before {
@@ -45,6 +60,10 @@
     top: 50%;
     left: -20px;
     transform: translate(0,-50%);
+    @include mq(md) {
+        margin: 0;
+        left: -16px;
+    }
 }
 .un_landBroadband_item_ttl {
     color: $cr-main;
@@ -52,6 +71,11 @@
     font-weight: bold;
     position: relative;
     left: 20px;
+    @include mq(md) {
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        left: 16px;
+    }
 }
 .un_landBroadband_item_img {
     width: 100%;
@@ -69,6 +93,9 @@
     letter-spacing: 0.06em;
     line-height: func-em(32,18);
     margin-top: 16px;
+    @include mq(md) {
+        line-height: func-em(28,18);
+    }
 }
 
 .un_landBroadbandBtnWrapper {
@@ -85,27 +112,4 @@
 .ly_landBroadband .un_landBroadbandBtn {
     font-size: 1.7rem;
     width: 310px;
-}
-
-@include mq(md) {
-    .un_landBroadband_lv2Heading {
-        font-size: 2rem;
-        line-height: func-em(32,20);
-        margin-bottom: 31px;
-    }
-    .un_landBroadband_item.un_landBroadband_item__half {
-        width: 100%;
-    }
-    .un_landBroadband_item_ttl::before {
-        margin: 0;
-        left: -16px;
-    }
-    .un_landBroadband_item_ttl {
-        font-size: 1.5rem;
-        letter-spacing: -0.02;
-        left: 16px;
-    }
-    .un_landBroadband_item_txt {
-        line-height: func-em(28,18);
-    }
 }

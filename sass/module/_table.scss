@@ -41,6 +41,9 @@
       display: block;
       width: 100%;
       font-size: 1.6rem;
+      padding: 0;
+      padding-bottom: 15px;
+      line-height: func-em(28,16);
     }
     address{
         margin-bottom: func-em(40,18);
