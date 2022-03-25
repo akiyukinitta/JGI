@@ -7,7 +7,6 @@
 }
 #businessField.ly_MV {
     background-image: url(/images/businessField/mv.jpg);
-
 }
 #landBroadband.ly_MV {
     background-image: url(/images/landBroadband/mv.jpg);
@@ -25,4 +24,16 @@
 }
 .ly_MV_inner__black {
     background-color:  #2B2B2B99;
+}
+
+@include mq(md) {
+    .ly_MV {
+        height: 404px;
+    }
+    #businessField.ly_MV {
+        background-image: url(/images/businessField/mv_sp.jpg);
+    }
+    .ly_MV_inner {
+        height: 200px;
+    }
 }
