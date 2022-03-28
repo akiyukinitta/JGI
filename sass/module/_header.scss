@@ -98,6 +98,7 @@ max-width: 160px;
     background-color: #fff;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 32px;
   }
 }
 
@@ -142,7 +143,7 @@ max-width: 160px;
     left: 0;
     position: absolute;
     bottom: -8px;
-
+    font-size: 2rem;
     opacity: 0;
     }
   }
@@ -207,10 +208,11 @@ padding: 0;
     justify-content: center;
   }
   @include mq(md) {
+    display: block;
     position: relative;
     background-color: #fff;
     padding: 0;
-    padding-left: 16px;
+    padding-left: 20px;
     padding-top: 24px;
   }
 }
@@ -234,8 +236,15 @@ padding: 0;
   margin-bottom: 1.25em;
   display: inline-block;
 }
+.bl_headerNavListChild_item{
+  margin-bottom: 0.8em;
+  @include mq(md) {
+
+  }
+}
 .bl_headerNavListChild_link{
   font-size: 1.6rem;
+
   color: $cr-main;
 }
 

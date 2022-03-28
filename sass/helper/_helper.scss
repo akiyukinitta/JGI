@@ -4,6 +4,9 @@
 	text-align: center !important;
 }
 
+.hp_textRight {
+	text-align: center !important;
+}
 
 .hp_pcOnly {
 	display: block !important;
@@ -93,7 +96,7 @@
 .hp_mailIcon::before{
 	position: absolute;
 	content: "";
-	background-image: url(/images/common/mail_icon.svg);
+	background-image: url(../../images/common/mail_icon.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -110,7 +113,7 @@
 .hp_arrowIcon::before{
 	position: absolute;
 	content: "";
-	background-image: url(/images/common/arrow.svg);
+	background-image: url(../../images/common/arrow.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -121,7 +124,7 @@
 	height: 1.5em;
 }
 .hp_arrowIcon.hp_arrowIcon__blue::before{
-	background-image: url(/images/common/arrow_blue.svg);
+	background-image: url(../../images/common/arrow_blue.svg);
 }
 .hp_bgSub{
 	background-color: $cr-sub;

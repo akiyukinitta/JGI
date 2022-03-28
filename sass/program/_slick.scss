@@ -1,13 +1,44 @@
-.slick-dots li button:before{
-color: #fff;
-opacity: 1;
-border-radius: 0;
-content: "";
-width: 15px;
-height: 15px;
-background-color: #fff;
+.slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+  border-radius: 0;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
 }
-.slick-dots li.slick-active button:before{
-    background-color: $cr-main;
-    opacity: 1;
+.slick-dots li.slick-active button:before {
+  background-color: $cr-main;
+  opacity: 1;
+}
+
+.ly_topMV {
+    .slick-next, .slick-prev{
+        width: auto;
+        height: auto;
+    }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 32px;
+    background: rgba($color: #000000, $alpha: 0.6);
+padding: 1em;
+  }
+  .slick-prev {
+    left: 5%;
+    z-index: 50;
+  }
+
+  .slick-next {
+    right: 5%;
+    z-index: 50;
+  }
+  .slick-prev:before {
+    content: "＜";
+padding: 1em 1.1em 1em 0.9em;
+  }
+
+  .slick-next::before {
+    content: "＞";
+    padding: 1em 0.9em 1em 1.1em;
+  }
 }

@@ -24,10 +24,15 @@
   @include mq(md) {
     display: block;
   }
+  &:first-of-type{
+    @include mq(md) {
+ margin-bottom: 0;
+    }
+  }
   }
   
   .bl_footerNav_item {
-	  padding-right: 3.45em;
+	  padding-right: 4.45em;
     @include mq(md) {
 padding-right: 0;
         }
@@ -35,13 +40,21 @@ padding-right: 0;
   .bl_footerNav01{
 
 	.bl_footerNav_item:first-of-type {
-		padding-right: func-em(114,20);
+	//	padding-right: func-em(114,20);
+ // padding-right: 3.45em;
 	}
+  .bl_footerNav_item:last-of-type {
+    //	padding-right: func-em(114,20);
+padding-right: 0;
+    }
   }
 
 
   .bl_footerNav_item > *:last-child {
 	margin-bottom: 0;
+  @include mq(md) {
+margin-bottom: 10px;
+            }
   }
   
   .bl_footerNav_item:last-child .bl_footerNav_link::after {
@@ -68,6 +81,9 @@ font-size: 1.6rem;
 
   .bl_footerChildNav {
 	/* css-wipeではスタイリングなし */
+  @include mq(md) {
+display: none;
+      }
   }
   
   .bl_footerChildNav_item {

@@ -1,0 +1,72 @@
+<% const pageMeta={ id: 'topics' ,title: '関連リンク' , description: '会社概要の説明文です' } %>
+    <%- include("common/_header", { meta: pageMeta }) %>
+
+        <main>
+            <section class="ly_topic">
+                <div class="bl_topic_intr">
+                    <div class="bl_breadcrumbs un_topicBreadcrumbs hp_pcOnly">
+                        <ul class="bl_breadcrumbs_list">
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html"
+                                    title="/">サイトTOP</a></li>
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link hp_pointerNone" href="topics.html"
+                                    title="/">トピックス</a></li>
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="" title="">
+                                    2021年ハイチで発生した地震 衛星SAR差分干渉処理(InSAR)結果</a></li>
+                        </ul>
+                    </div>
+                    <div class="ly_inner">
+                        <div class="bl_topic_header">
+
+                            <div class="bl_topics_itemTag">サービス関連</div>
+
+                            <!-- /.bl_vertPosts_header -->
+
+                            <h1 class="bl_topic_ttl" href="#">2021年ハイチで発生した地震 衛星SAR差分干渉<br
+                                    class="hp_pcOnly">処理（InSAR）結果</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_topic_contHeader">
+                    <div class="ly_inner">
+                        <time class="bl_topics_date" datetime="2021-08-19">2021/08/19</time>
+                        <a href="" class="bl_topic_indexLink hp_pointerNone">＞ 一覧に戻る</a>
+                    </div>
+                </div>
+
+
+                <div class="bl_breadcrumbs un_topicBreadcrumbs hp_pcOnly">
+                    <ul class="bl_breadcrumbs_list">
+                        <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html"
+                                title="/">TOP</a></li>
+                        <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="links.html"
+                                title="">トピックス</a></li>
+                    </ul>
+                </div>
+                <div class="ly_inner">
+                    <h3 class="bl_topicLv3Heading">【事例９】2021年ハイチで発生した地震 衛星SAR差分干渉処理(InSAR)結果（速報）</h3>
+
+                    <p class="bl_topicCentence">2021年ハイチで発生した地震（2021年8月14日12:29 UTC発生；M7.2）の前後に観測された，ヨーロッパの衛星Sentinel-1のCバンドSARデータを用いた差分干渉処理の結果です。</p>
+                    <div class="hp_textCenter">
+                        <img src="/images/topic/20210806/topic01.jpg" alt="" class="bl_topicImage">
+                    </div>
+                    <p class="bl_topicCentence">
+                        2021年8月3日および2021年8月15日の南行軌道で取得された観測データについて処理を行いました。図は差分インターフェログラムの位相表示です。図にはUSGSより取得した震央の位置を赤色の★により示しています。Sentinel-1のSARはCバンド（波長=5.6cm）のデータであり，
+                        1サイクルの位相変化は，衛星の視線方向における半波長=2.8ｃｍの地表変位に相当します。位相の増加は衛星から遠ざかることを意味し，南行軌道の場合では沈下または西方向の移動またはその両方の変位となります。
+                        位相の減少は衛星に近づくことを意味し，南行軌道の場合では隆起または東方向の移動またはその両方の変位となります。位相の色の無い黒色の部分は干渉性が低く干渉しなかったことを意味しています。
+                        干渉性の低下は、空間的に不連続で急激な変位が生じていることが原因であると考えられ、地すべりなどの非常に大きな地表変位が生じた可能性が考えられます。
+                        位相変化のパターンから，東西方向にわたる直線状の干渉性の低い部分（白色矢印）が確認でき、この線に沿って大きな地表変位があったことが示唆されます。
+                        この線は本半島に東西方向にわたり存在するEnriquillo-Plantain Garden断層の位置と調和的であり、この断層の活動に伴う地震であることが示唆されます。
+                        震央付近（図内A）には、同心円状の位相パターンが確認でき、同心円の中心に向かうほど衛星に近づく変位を示しています。その縞の間隔は密であり大きな変位が生じていることを示しています。
+                        その西側（図内B）では衛星から遠ざかる変位を示す位相パターンが確認でき、断層の左横ずれによる西方向への変位を示唆するものとなっています。
+                        なお，本処理結果は速報扱いであり，水蒸気遅延等は未補正の状態です。
+                    </p>
+
+                    <div class="bl_topicFooter hp_textRight">
+                        <a href="" class="bl_topic_indexLink hp_pointerNone">＞ 一覧に戻る</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("common/_footer") %>

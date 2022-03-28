@@ -3,7 +3,11 @@
 .bl_breadcrumbs {
     position: absolute;
     top: 0;
-    z-index: 999;
+    z-index: 5;
+
+    @include mq(md) {
+display: none;
+    }
 }
 .bl_breadcrumbs_list {
     display: flex;

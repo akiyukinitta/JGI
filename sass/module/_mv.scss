@@ -10,21 +10,21 @@
     }
 }
 #businessField .ly_MV {
-    background-image: url(/images/businessField/mv.jpg);
+    background-image: url(../../images/businessField/mv.jpg);
     @include mq(md) {
-        background-image: url(/images/businessField/mv_sp.jpg);
+        background-image: url(../../images/businessField/mv_sp.jpg);
     }
 }
 #landBroadband .ly_MV {
-    background-image: url(/images/landBroadband/mv.jpg);
+    background-image: url(../../images/landBroadband/mv.jpg);
     @include mq(md) {
-        background-image: url(/images/landBroadband/mv_sp.jpg);
+        background-image: url(../../images/landBroadband/mv_sp.jpg);
     }
 }
 #about .ly_MV {
-    background-image: url(/images/about/mv.jpg);
+    background-image: url(../../images/about/mv.jpg);
     @include mq(md) {
-        background-image: url(/images/about/mv_sp.jpg);
+        background-image: url(../../images/about/mv_sp.jpg);
     }
 }
 #links .ly_MV {

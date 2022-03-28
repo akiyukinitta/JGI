@@ -32,9 +32,14 @@
     color: #fff;
     border-radius: 12px;
     background-color: #2F8B87;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     margin-right: 10px;
     display: inline-block;
+    min-width: 130px;
+    text-align: center;
+  }
+  .bl_topics_itemTag.bl_topics_itemTag__news{
+ background-color: #00387C;
   }
   .bl_topics_date {
     font-size: 1.6rem;
@@ -51,3 +56,102 @@
     opacity: 0.8;
   }
   
+
+  /*---------------------------------
+  個別ページ
+  ---------------------------------*/
+  .ly_topic{
+    padding-bottom: 96px;
+    @include mq(md) { 
+padding-bottom: 74px;
+              }
+    .bl_breadcrumbs_item_link{
+      color: #808080;
+    }
+  }
+  .un_topicBreadcrumbs{
+    position: relative;
+  }
+.bl_topic_ttl{
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: func-em(50,32);
+  padding-top: 16px;
+  @include mq(md) { 
+    font-size: 2.4rem;
+            }
+}
+.bl_topic_header{
+padding-top: 42px;
+padding-bottom: 52px;
+  @include mq(md) { 
+padding-bottom: 20px;
+padding-top: 112px;
+            }
+.bl_topics_date{
+  font-size: 1.8rem;
+}
+}
+.bl_topics_itemTag{
+  
+}
+.bl_topic_contHeader{
+  background-color: #EBEBEB;
+  padding: 28px 0;
+  .ly_inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bl_topicLv3Heading{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  @include mq(md) { 
+    margin-top: func-em(30,18);
+    font-size: 1.8rem;
+            }
+}
+.bl_topicCentence{
+  font-size: 1.8rem;
+  line-height: func-em(40,18);
+  letter-spacing: 0.06;
+  margin-bottom: func-em(52,18);
+  @include mq(md) { 
+    font-size: 1.6rem;
+    margin-bottom: func-em(30,16);
+    line-height: func-em(28,16);
+            }
+}
+.bl_topicImage{
+  margin-bottom: 42px;
+  @include mq(md) { 
+    margin-bottom: 30px;
+            }
+}
+
+.bl_topic_indexLink{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.bl_topicFooter{
+  margin-top: 109px;
+  @include mq(md) { 
+    margin-top: 74px;
+            }
+}
+
+/*---------------------------------
+  一覧ページ
+---------------------------------*/
+.ly_topics{
+  .ly_MV{
+background-color: $cr-main;
+  }
+  .ly_MV_inner{
+background-color: #00597C;
+height: 78px;
+  }
+}

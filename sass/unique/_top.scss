@@ -63,10 +63,11 @@ padding-left: 24px;
     }
 }
 .slick_topMvSlide_item.slick_topMvSlide_item02{
-background: #bbe599;
+  background-image: url(../../images/top/mv2.png);
+  background-position: center;
     @include mq(md) {
         // background-image: url(../../images/top/mv-sp.jpg);
-    background-image: none;
+    // background-image: none;
     min-height: auto;
     }
 }
@@ -86,7 +87,7 @@ background: #bbe599;
     min-height: auto;
     }
 }
-d76053
+
 /*---------------------------------
   コンテンツ
 ---------------------------------*/
