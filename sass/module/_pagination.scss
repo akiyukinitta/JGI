@@ -1,0 +1,14 @@
+@import "settings";
+
+.bl_paginationList{
+    display: flex;
+    margin-top: 20px;
+    letter-spacing: 0.2em;
+    justify-content: flex-end;
+}
+.bl_paginationList_item{
+    position: relative;
+    &::after{
+        content: "/";
+    }
+}

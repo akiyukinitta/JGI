@@ -1,4 +1,4 @@
-<% const pageMeta={ id: 'topics' ,title: '関連リンク' , description: '会社概要の説明文です' } %>
+<% const pageMeta={ id: 'topics' ,title: 'トピックス' , description: 'トピックス一覧' } %>
     <%- include("common/_header", { meta: pageMeta }) %>
 
         <main>
@@ -7,65 +7,219 @@
                     <div class="bl_breadcrumbs">
                         <ul class="bl_breadcrumbs_list">
                             <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html" title="/">サイトTOP</a></li>
-                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="about.html" title="">会社概要</a>
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="about.html" title="">トピックス</a>
                             </li>
                         </ul>
                     </div>
+
                     <div class="ly_MV_inner">
-                        <ul class="un_aboutNav js-tab-filter tab">
-                            <li class="un_aboutNav_item"><a class="un_aboutNav_item_link anchor tab-trigger js-tab-trigger" href="" data-filter="infomation">お知らせ</a></li>
-                            <li class="un_aboutNav_item"><a class="un_aboutNav_item_link anchor tab-trigger js-tab-trigger" href="" data-filter="service">サービス関連</a></li>
-                            <li class="un_aboutNav_item"><a class="un_aboutNav_item_link anchor tab-trigger js-tab-trigger" href="" data-filter="media">メディア情</a></li>
-                            <li class="un_aboutNav_item"><a class="un_aboutNav_item_link anchor tab-trigger js-tab-trigger is-active" href="" data-filter="all">ALL</a></li>
-                        </ul>
+                    <h1 class="el_lv1Heading">トピックス</h1>
                     </div>
                 </div>
-                <div class="bl_breadcrumbs un_topicBreadcrumbs hp_pcOnly">
-                    <ul class="bl_breadcrumbs_list">
-                        <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html"
-                                title="/">TOP</a></li>
-                        <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="links.html"
-                                title="">トピックス</a></li>
-                    </ul>
-                </div>
+                <ul class="un_topicNav js-tab-filter tab news_link">
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-infomation.html" data-filter="infomation">お知らせ</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-service.html" data-filter="service">サービス関連</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-media.html" data-filter="media">メディア情報</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor tab-active" href="topics.html" data-filter="all">ALL</a></li>
+                </ul>
+
                 <div class="ly_inner">
-                    <ul class="bl_topics area is-active" id="all">
-                        <li class="bl_topics_item">
+                    <ul class="bl_topics js-tab-boxes">
+                        <li class="bl_topics_item" data-category="infomation">
                             <div class="bl_topics_header">
                                 <div class="bl_topics_itemTag">サービス関連</div>
-                                <time class="bl_topics_date" datetime="2021-08-19">2021/08/19</time>
+                                <time class="bl_topics_date" datetime="2021-08-10">2021/08/10</time>
                             </div>
                             <!-- /.bl_vertPosts_header -->
-                            <a class="bl_topics_ttl anime_hoverMainColor" href="#">2021年ハイチで発生した地震 衛星SAR差分干渉処理（InSAR）結果</a>
+                            <a class="bl_topics_ttl anime_hoverMainColor" href="#">	当社が共同研究で行った海洋CSEM探査技術の国内内製化に向けた実証実験に関して寺西他が第144回物理探査学会講演会 優秀発表賞 を受賞致しました。</a>
                         </li>
-                        <li class="bl_topics_item">
+                        <li class="bl_topics_item" data-category="service">
                             <div class="bl_topics_header">
-                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
                                 <time class="bl_topics_date" datetime="2021-06-25">2021/06/25</time>
                             </div>
                             <!-- /.bl_vertPosts_header -->
-                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社役員が交代致しました</a>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社役員が交代致しました。</a>
                         </li>
-                        <li class="bl_topics_item">
+                        <li class="bl_topics_item" data-category="media">
                             <div class="bl_topics_header">
                                 <div class="bl_topics_itemTag">サービス関連</div>
                                 <time class="bl_topics_date" datetime="2020-08-18">2020/08/18</time>
                             </div>
                             <!-- /.bl_vertPosts_header -->
-                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">新型ブロードバンドバイブレータ（UNIVIB2）を導入</a>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">新型ブロードバンドバイブレータ(UNIVIB2)を導入しました。</a>
                         </li>
-                    </ul>
-
-                    <ul class="bl_topics area" id="service">
-                        <li class="bl_topics_item">
+                        <li class="bl_topics_item" data-category="service">
                             <div class="bl_topics_header">
                                 <div class="bl_topics_itemTag">サービス関連</div>
-                                <time class="bl_topics_date" datetime="2021-08-19">2021/08/19</time>
+                                <time class="bl_topics_date" datetime="2020-06-08">2020/06/08</time>
                             </div>
                             <!-- /.bl_vertPosts_header -->
-                            <a class="bl_topics_ttl anime_hoverMainColor" href="#">2021年ハイチで発生した地震 衛星SAR差分干渉処理（InSAR）結果</a>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">	弊社の猪野滋社員、須田茂幸社員、菊地秀邦社員が連名で令和元年度　物理探査学会賞　論文業績賞（事例研究賞）を受賞致しました。</a>
                         </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2020-01-01">2020/01/01</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">代表取締役社長が交代致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="service">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2021-06-25">2019/10/01</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">日本風力発電協会に賛助会員登録致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2019-09-20">2019/09/20</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">(一社)全国地質調査業協会連合会「技術フォーラム2019」岡山にて優秀技術発表者賞を弊社 影島 充万 社員「衛星SAR差分干渉解析を用いたダム堤体の変位検出」が受賞致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="service">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2019-07-18">2019/07/18</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">2019年カリフォルニアで発生した地震　衛星SAR差分干渉処理結果 を掲載致しました。(技術情報に処理結果を追加しました。)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2019-07-12">2019/07/12</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">2019年カリフォルニアで発生した地震　衛星SAR差分干渉処理結果 を掲載致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2019-06-21">2019/06/21</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">2019年山形県沖地震 衛星SAR差分干渉処理結果を掲載致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2019-04-23">2019/04/23</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">品質方針を更新致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2018-12-23">2018/12/23</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">12月１日付けで弊社秋田営業所が移転致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2018-09-28">2018/09/28</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">インドネシアのスマランで開催されます第43回インドネシア物理探査学会(HAGI) PIT 43 HAGI SEMARANG2018に弊社のブースを出展致しました。
+                                　　期間：9月24日～9月27日</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-09-21">2018/09/21</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社の技術の一部であります「海底熱水鉱床」の音波探査について、テレビ東京およびBSジャパン ワールドビジネスサテライトで放映されました。（J-MARES/JGI)</a>
+                        </li>
+                        <!-- <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-09-19">2018/09/19</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">(一社)全国地質調査業協会連合会「技術フォーラム2018」高松にて優秀技術発表者賞を弊社 大沼　巧社員「衛星SAR差分干渉による地表変位監視」が受賞致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2018-08-07">2018/08/07</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">（公社）物理探査学会の学会誌「物理探査」に弊社の『超高分解能三次元地震探査(UHR3D)－日奈久断層帯海岸部における実施例－』」が技術報告として掲載されました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-06-01">2018/06/01</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">サービス関連</div>
+                                <time class="bl_topics_date" datetime="2018-05-29">2018/05/29</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社 青木直史社員、新部貴夫社員、寺西陽祐社員、持永尚子社員が、連名で(公社)物理探査学会の第58回(平成29年度)論文業績賞の事例研究賞を受賞致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-05-08">2018/05/08</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社加盟のJ-MARES(次世代海洋資源調査技術研究組合)は、神戸国際展示場にて開催されるOCEANS’18 MTS/IEEE Kobe / Techno-Ocean 2018(5月29日～31日）にブース出展致します。(ブース43)</a>
+                        </li> -->
                     </ul>
+
+                    <!-- <div class="bl_pagination">
+                        <ul class="bl_paginationList">
+                           <li class="bl_paginationList_item">1</li>
+                           <li class="bl_paginationList_item">2</li>
+                           <li class="bl_paginationList_item">3</li>
+                        </ul>
+                    </div> -->
+
                 </div>
             </section>
 

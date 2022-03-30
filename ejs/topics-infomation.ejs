@@ -1,0 +1,75 @@
+<% const pageMeta={ id: 'topics' ,title: '関連リンク' , description: '会社概要の説明文です' } %>
+    <%- include("common/_header", { meta: pageMeta }) %>
+
+        <main>
+            <section class="ly_topics">
+                <div class="ly_MV">
+                    <div class="bl_breadcrumbs">
+                        <ul class="bl_breadcrumbs_list">
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html" title="/">サイトTOP</a></li>
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="about.html" title="">トピックス</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ly_MV_inner">
+                    <h1 class="el_lv1Heading">トピックス</h1>
+                    </div>
+                </div>
+                <ul class="un_topicNav js-tab-filter tab news_link">
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-infomation.html" data-filter="infomation">お知らせ</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-service.html" data-filter="service">サービス関連</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-media.html" data-filter="media">メディア情報</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor tab-active" href="topics.html" data-filter="all">ALL</a></li>
+                </ul>
+
+                <div class="ly_inner">
+                    <ul class="bl_topics js-tab-boxes">
+                        <li class="bl_topics_item" data-category="service">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2021-06-25">2021/06/25</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社役員が交代致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2020-01-01">2020/01/01</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">代表取締役社長が交代致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="service">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2021-06-25">2019/10/01</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">日本風力発電協会に賛助会員登録致しました。</a>
+                        </li>
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag bl_topics_itemTag__news">お知らせ</div>
+                                <time class="bl_topics_date" datetime="2019-07-12">2019/07/12</time>
+                            </div>
+                            <!-- /.bl_vertPosts_header -->
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">品質方針を更新致しました。</a>
+                        </li>
+                    </ul>
+
+                    <div class="bl_pagination">
+                        <ul class="bl_paginationList">
+                           <li class="bl_paginationList_item">1</li>
+                           <li class="bl_paginationList_item">2</li>
+                           <li class="bl_paginationList_item">3</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("common/_footer") %>

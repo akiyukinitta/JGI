@@ -1,0 +1,50 @@
+<% const pageMeta={ id: 'topics' ,title: '関連リンク' , description: '会社概要の説明文です' } %>
+    <%- include("common/_header", { meta: pageMeta }) %>
+
+        <main>
+            <section class="ly_topics">
+                <div class="ly_MV">
+                    <div class="bl_breadcrumbs">
+                        <ul class="bl_breadcrumbs_list">
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="index.html" title="/">サイトTOP</a></li>
+                            <li class="bl_breadcrumbs_item"><a class="bl_breadcrumbs_item_link" href="about.html" title="">トピックス</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ly_MV_inner">
+                    <h1 class="el_lv1Heading">トピックス</h1>
+                    </div>
+                </div>
+                <ul class="un_topicNav js-tab-filter tab news_link">
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-infomation.html" data-filter="infomation">お知らせ</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-service.html" data-filter="service">サービス関連</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor" href="topics-media.html" data-filter="media">メディア情報</a></li>
+                    <li class="un_topicNav_item"><a class="un_topicNav_link anchor tab-active" href="topics.html" data-filter="all">ALL</a></li>
+                </ul>
+
+                <div class="ly_inner">
+                    <ul class="bl_topics js-tab-boxes">
+                        <li class="bl_topics_item" data-category="media">
+                            <div class="bl_topics_header">
+                                <div class="bl_topics_itemTag">メディア情報</div>
+                                <time class="bl_topics_date" datetime="2018-09-21">2018/09/21</time>
+                            </div>
+                            <a class="bl_topics_ttl anime_hoverMainColor hp_pointerNone" href="#">弊社の技術の一部であります「海底熱水鉱床」の音波探査について、テレビ東京およびBSジャパン ワールドビジネスサテライトで放映されました。（J-MARES/JGI)</a>
+                        </li>
+                    </ul>
+
+                    <div class="bl_pagination">
+                        <ul class="bl_paginationList">
+                           <li class="bl_paginationList_item">1</li>
+                           <li class="bl_paginationList_item">2</li>
+                           <li class="bl_paginationList_item">3</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <%- include("common/_footer") %>
