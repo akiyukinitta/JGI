@@ -14,6 +14,15 @@
     @include mq(md) { 
       display: block;
               }
+              a{
+                color: $cr-main;
+                &:hover{
+                  opacity: 0.8;
+                }
+              }
+              a.hp_pointerNone{
+                color: $cr-txt;
+              }
   }
   
   .bl_topics_item:first-child {
@@ -53,11 +62,6 @@
     text-decoration: none;
   }
   
-  .bl_topics_ttl:focus,
-  .bl_topics_ttl:hover {
-    // text-decoration: underline;
-    opacity: 0.8;
-  }
   
 
   /*---------------------------------

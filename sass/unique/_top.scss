@@ -63,7 +63,7 @@ padding-left: 24px;
     }
 }
 .slick_topMvSlide_item.slick_topMvSlide_item02{
-  background-image: url(../../images/top/mv2.png);
+  background-image: url(../../images/top/JGI_MV2.jpg);
   background-position: center;
     @include mq(md) {
         // background-image: url(../../images/top/mv-sp.jpg);
@@ -72,7 +72,8 @@ padding-left: 24px;
     }
 }
 .slick_topMvSlide_item.slick_topMvSlide_item03{
-    background: #53bad7;
+  background-image: url(../../images/top/JGI_MV3.jpg);
+  background-position: center;
     @include mq(md) {
         // background-image: url(../../images/top/mv-sp.jpg);
     background-image: none;

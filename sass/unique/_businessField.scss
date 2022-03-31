@@ -55,15 +55,19 @@
     border-radius: 25px;
     background-color: #E2F9FF;
     width: calc(33.333333% - 12px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 0.8;
+    text-align: center;
+    display: flex;
     @include mq(md) {
         width: 100%;
         margin-bottom: 25px;
     }
-
+}
+.un_businessField_list_itemCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 .un_businessField_list_item.un_businessField_list_item__hover:hover {
         background-color: $cr-main;
@@ -85,16 +89,15 @@ color: #fff;
 }
 .un_businessField_list_item__col4 {
     width: calc(50% - 10px);
-    flex-direction: row-reverse;
+    // flex-direction: row-reverse;
     padding: 23px;
     @include mq(md) {
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
         height: 280px;
     }
 }
 .un_businessField_list_item__col1 {
     width: 100%;
-    flex-direction: row-reverse;
     padding: 23px;
     @include mq(md) {
         
