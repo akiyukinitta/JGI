@@ -21,6 +21,12 @@
         background-image: url(../../images/landBroadband/mv_sp.jpg);
     }
 }
+#highprecisionphysics .ly_MV {
+    background-image: url(../../images/highprecisionphysics/mv.jpg);
+    @include mq(md) {
+        background-image: url(../../images/highprecisionphysics/mv_sp.jpg);
+    }
+}
 #about .ly_MV {
     background-image: url(../../images/about/mv.jpg);
     @include mq(md) {
