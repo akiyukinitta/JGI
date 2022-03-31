@@ -27,6 +27,12 @@
         background-image: url(../../images/highprecisionphysics/mv_sp.jpg);
     }
 }
+#geologicalsynthesis .ly_MV {
+    background-image: url(../../images/geologicalsynthesis/mv.jpg);
+    @include mq(md) {
+        background-image: url(../../images/geologicalsynthesis/mv_sp.jpg);
+    }
+}
 #about .ly_MV {
     background-image: url(../../images/about/mv.jpg);
     @include mq(md) {
