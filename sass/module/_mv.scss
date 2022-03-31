@@ -21,18 +21,28 @@
         background-image: url(../../images/landBroadband/mv_sp.jpg);
     }
 }
-#highprecisionphysics .ly_MV {
-    background-image: url(../../images/highprecisionphysics/mv.jpg);
+
+#highResolutionRadar .ly_MV {
+    background-image: url(../../images/highResolutionRadar/mv.jpg);
     @include mq(md) {
-        background-image: url(../../images/highprecisionphysics/mv_sp.jpg);
+    background-image: url(../../images/highResolutionRadar/mv_sp.jpg);
     }
 }
-#geologicalsynthesis .ly_MV {
-    background-image: url(../../images/geologicalsynthesis/mv.jpg);
+
+#magneticMediaConvert .ly_MV {
+    background-image: url(../../images/magneticMediaConvert/mv.jpg);
     @include mq(md) {
-        background-image: url(../../images/geologicalsynthesis/mv_sp.jpg);
+    background-image: url(../../images/magneticMediaConvert/mv_sp.jpg);
     }
 }
+
+#globalSurfaceObservation .ly_MV {
+    background-image: url(../../images/globalSurfaceObservation/mv.jpg);
+    @include mq(md) {
+    background-image: url(../../images/globalSurfaceObservation/mv_sp.jpg);
+    }
+}
+
 #about .ly_MV {
     background-image: url(../../images/about/mv.jpg);
     @include mq(md) {
