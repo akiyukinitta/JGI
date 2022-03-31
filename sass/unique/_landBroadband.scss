@@ -28,11 +28,59 @@
     }
 }
 
+.un_landBroadband_body {
+
+    @include mq(md) {
+
+    }
+}
+.un_landBroadband_body_cont {
+    margin-bottom: 24px;
+    @include mq(md) {
+
+    }
+}
+.un_landBroadband_body_txt {
+    font-size: 1.8rem;
+    letter-spacing: 0.06em;
+    line-height: func-em(32,18);
+    @include mq(md) {
+        font-size: 1.6rem;
+        line-height: func-em(28,16);
+    }
+}
+.un_landBroadband_lv3Heading {
+    color: #00387C;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+.un_landBroadband_lv3Heading::before {
+    content:"";
+    display: block;
+    background-color: $cr-main;
+    width: 16px;
+    height: 16px;
+    margin: 1px 1px 0 0;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0,-50%);
+    @include mq(md) {
+        margin: 0;
+        left: -16px;
+    }
+}
+
 .un_landBroadband_list {
     margin: 62px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.un_landBroadband_list__mt20 {
+    margin-top: 20px;
 }
 .un_landBroadband_item {
     width: 100%;
@@ -80,6 +128,9 @@
 .un_landBroadband_item_img {
     width: 100%;
     height: auto;
+}
+.un_landBroadband_item_img__maxwid700 {
+    max-width: 700px;
 }
 .un_landBroadband_item_imgFlex {
     display: flex;
