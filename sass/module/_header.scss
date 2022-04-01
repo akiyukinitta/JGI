@@ -244,8 +244,11 @@ padding: 0;
 }
 .bl_headerNavListChild_link{
   font-size: 1.6rem;
-
   color: $cr-main;
+  transition: 0.8;
+&:hover{
+  opacity: 0.8;
+}
 }
 
 /*---------------------------------

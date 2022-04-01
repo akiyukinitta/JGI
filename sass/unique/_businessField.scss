@@ -68,6 +68,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
+    @include mq(md) {
+        width: 100%;
+flex-direction: column-reverse;
+    }
 }
 .un_businessField_list_item.un_businessField_list_item__hover:hover {
         background-color: $cr-main;
